@@ -10,7 +10,7 @@ La storia in tre capitoli, controllata dallo scroll (frame-scrub su canvas, stil
 
 ## Struttura
 
-- `site/` — il sito pubblicabile (single-file `index.html` + asset)
+- `docs/` — il sito pubblicabile (single-file `index.html` + asset; si chiama `docs` per GitHub Pages)
   - `frames/s1..s3/` — sequenze WebP per lo scrub (50 frame/scena, 10fps)
 - `keyframes/` — immagini chiave generate (Higgsfield / Nano Banana 2)
 - `video/` — clip sorgente 1080p (Kling 3.0 pro, image-to-video first/last frame)
@@ -19,13 +19,13 @@ La storia in tre capitoli, controllata dallo scroll (frame-scrub su canvas, stil
 ## Sviluppo locale
 
 ```bash
-cd site && python3 -m http.server 8420
+cd docs && python3 -m http.server 8420
 # → http://localhost:8420
 ```
 
 ## Deploy
 
-Workflow GitHub Actions incluso (`.github/workflows/pages.yml`): pubblica `site/` su GitHub Pages a ogni push su `main`.
+GitHub Pages da branch: **Settings → Pages → Deploy from a branch → `main` / `docs`**.
 
 ## Stack
 
