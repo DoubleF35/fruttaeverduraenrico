@@ -1,0 +1,8 @@
+# binari locali (ffmpeg statico) — non vanno su GitHub
+tools/
+*.tar.xz
+
+# varie
+__pycache__/
+.DS_Store
+*.log
