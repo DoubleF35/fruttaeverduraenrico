@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frutta e Verdura Enrico — Albenga | Fresco ogni mattina in Via Fortino 6</title>
+<meta name="description" content="Frutta e verdura fresca di stagione ad Albenga: zucchina trombetta, carciofo violetto, cuore di bue e asparago violetto. Vieni a trovarci in Via Fortino 6.">
+<meta property="og:title" content="Frutta e Verdura Enrico — Albenga">
+<meta property="og:description" content="Dalla terra al banco, ogni mattina. Frutta e verdura fresca in Via Fortino 6, Albenga.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:type" content="business.business">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍊</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="frames/s1/f_001.webp">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GroceryStore",
+  "name": "Frutta e Verdura Enrico",
+  "image": "og-image.jpg",
+  "telephone": "+39 0182 52571",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Fortino 6",
+    "postalCode": "17031",
+    "addressLocality": "Albenga",
+    "addressRegion": "SV",
+    "addressCountry": "IT"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 44.0466288, "longitude": 8.223236 },
+  "sameAs": ["https://www.facebook.com/p/Frutta-e-verdura-Enrico-100075497484728/"]
+}
+</script>
+<style>
+:root{
+  --verde:#2f6b35; --verde-scuro:#1e4423; --crema:#faf5ea; --crema-scura:#f1e8d6;
+  --terracotta:#c75b39; --arancio:#e8923a; --legno:#8a5a33; --inchiostro:#26301f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:auto}
+body{font-family:'Manrope',system-ui,sans-serif;background:var(--crema);color:var(--inchiostro);overflow-x:hidden}
+h1,h2,h3{font-family:'Fraunces',serif;line-height:1.08}
+img{max-width:100%;display:block}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero-bg{position:absolute;inset:0;background:url('frames/s1/poster.webp') center/cover no-repeat;transform:scale(1.04)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,28,16,.25) 0%,rgba(20,28,16,.45) 65%,rgba(20,28,16,.72) 100%)}
+.hero-inner{position:relative;z-index:2;color:#fdfaf2;padding:0 24px;max-width:900px}
+.kicker{letter-spacing:.35em;font-weight:800;font-size:clamp(.68rem,1.6vw,.85rem);text-transform:uppercase;opacity:.92}
+.hero h1{font-size:clamp(2.4rem,8vw,5.4rem);font-weight:700;margin:.35em 0 .25em;text-shadow:0 4px 30px rgba(0,0,0,.35)}
+.hero p.sub{font-size:clamp(1rem,2.6vw,1.4rem);font-weight:600;opacity:.95}
+.scroll-cue{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:2;color:#fdfaf2;font-size:.8rem;letter-spacing:.25em;text-transform:uppercase;opacity:.85}
+.scroll-cue::after{content:'';display:block;width:1px;height:42px;margin:10px auto 0;background:linear-gradient(#fdfaf2,transparent);animation:cue 1.6s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(.3);transform-origin:top}55%{transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
+#loadbar{position:absolute;top:0;left:0;height:3px;width:0%;background:var(--arancio);z-index:5;transition:width .3s;border-radius:0 3px 3px 0}
+
+/* ---------- SCENE SCRUB ---------- */
+.scene{position:relative;height:100vh;height:100svh;overflow:hidden}
+.scene canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.scene .poster-img{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.caption{position:absolute;z-index:3;max-width:min(560px,86vw);opacity:0;color:#fdfaf2;text-shadow:0 2px 18px rgba(10,16,8,.55)}
+.caption h2{font-size:clamp(1.7rem,5vw,3.2rem);margin-bottom:.3em}
+.caption p{font-size:clamp(.95rem,2.4vw,1.2rem);font-weight:600;line-height:1.5}
+.pos-lb{left:6vw;bottom:12vh}
+.pos-rt{right:6vw;top:14vh;text-align:right}
+.pos-lt{left:6vw;top:14vh}
+.pos-cb{left:0;right:0;bottom:12vh;margin:0 auto;text-align:center}
+@media (max-width:768px){
+  .caption{left:6vw !important;right:6vw !important;top:auto !important;bottom:9vh !important;text-align:left !important;max-width:88vw}
+}
+
+/* ---------- INTERLUDI NARRATIVI ---------- */
+.interlude{padding:clamp(90px,16vw,180px) 24px;text-align:center}
+.interlude .mini{font-size:clamp(.7rem,1.5vw,.85rem);letter-spacing:.35em;text-transform:uppercase;font-weight:800;color:var(--terracotta);margin-bottom:26px}
+.interlude p{font-family:'Fraunces',serif;font-size:clamp(1.5rem,4.2vw,2.5rem);font-weight:600;line-height:1.4;max-width:780px;margin:0 auto;color:var(--verde-scuro)}
+.interlude.scuro{background:var(--verde-scuro)}
+.interlude.scuro p{color:var(--crema)}
+.interlude.scuro .mini{color:var(--arancio)}
+
+/* ---------- PRODOTTI ---------- */
+.prodotti{padding:clamp(64px,10vw,120px) 24px;background:var(--crema);text-align:center}
+.prodotti .kicker{color:var(--terracotta)}
+.prodotti h2{font-size:clamp(1.9rem,5vw,3.2rem);color:var(--verde-scuro);margin:.3em 0 .4em}
+.prodotti>p{max-width:560px;margin:0 auto 48px;font-weight:600;color:#55603f}
+.grid{display:flex;flex-wrap:wrap;gap:28px;justify-content:center;max-width:1100px;margin:0 auto}
+.card{width:180px}
+.card img{width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 auto 14px;border:5px solid #fff;box-shadow:0 10px 30px rgba(60,50,20,.18);transition:transform .35s}
+.card:hover img{transform:scale(1.07) rotate(-2deg)}
+.card h3{font-size:1.1rem;color:var(--verde-scuro)}
+.card span{font-size:.82rem;color:#7a8261;font-weight:600}
+.card.ospite{position:relative}
+.card.ospite::before{content:'il +1 di casa';position:absolute;top:-6px;right:10px;background:var(--terracotta);color:#fff;font-size:.66rem;font-weight:800;padding:4px 11px;border-radius:999px;letter-spacing:.06em;transform:rotate(6deg);z-index:2;box-shadow:0 4px 12px rgba(199,91,57,.4)}
+
+/* ---------- INFO ---------- */
+.info{background:var(--verde-scuro);color:var(--crema);padding:clamp(64px,9vw,110px) 24px}
+.info-wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:stretch}
+@media (max-width:860px){.info-wrap{grid-template-columns:1fr}}
+.info .kicker{color:var(--arancio)}
+.info h2{font-size:clamp(1.9rem,5vw,3rem);margin:.3em 0 .6em}
+.info-block{margin-bottom:26px}
+.info-block h3{font-size:1.05rem;color:var(--arancio);margin-bottom:.35em;letter-spacing:.04em}
+.info-block p,.info-block li{font-weight:600;line-height:1.65;font-size:1.02rem}
+.orari-list{list-style:none}
+.orari-list li{display:flex;justify-content:space-between;max-width:340px;border-bottom:1px dashed rgba(250,245,234,.25);padding:.3em 0}
+.btn-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:800;text-decoration:none;font-size:.95rem;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-arancio{background:var(--arancio);color:#2c1d08;box-shadow:0 8px 24px rgba(232,146,58,.35)}
+.btn-ghost{border:2px solid rgba(250,245,234,.5);color:var(--crema)}
+.mappa{border-radius:18px;overflow:hidden;min-height:380px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
+.mappa iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+
+footer{background:#142417;color:#9fb59a;text-align:center;padding:28px 24px;font-size:.85rem;font-weight:600}
+footer a{color:#c8d8c2}
+
+/* ---------- FALLBACK senza animazioni ---------- */
+.no-motion .scene{height:auto;overflow:visible;background:var(--crema)}
+.no-motion .scene canvas{display:none}
+.no-motion .scene .poster-img{display:block;position:static;height:auto}
+.no-motion .caption{position:static;opacity:1;max-width:680px;margin:26px auto;text-align:center !important;color:var(--verde-scuro);text-shadow:none}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div id="loadbar"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="kicker">Albenga · Liguria</div>
+    <h1>Frutta e Verdura<br>Enrico</h1>
+    <p class="sub">Dalla terra al banco, ogni mattina.</p>
+  </div>
+  <div class="scroll-cue">scorri</div>
+</header>
+
+<!-- INTERLUDIO: CAPITOLO 1 -->
+<section class="interlude">
+  <div class="mini">Capitolo primo · La terra</div>
+  <p>C'è una storia che ad Albenga si ripete ogni mattina. Comincia qui, nella terra scura della piana. Scorri, e guardala crescere.</p>
+</section>
+
+<!-- SCENA 1: L'ORTO -->
+<section class="scene" id="s1" data-path="frames/s1/" data-total="50">
+  <canvas></canvas>
+  <img class="poster-img" src="frames/s1/poster.webp" alt="Orto ligure all'alba con germogli" loading="lazy">
+  <div class="caption pos-lb">
+    <h2>Tutto comincia nella terra</h2>
+    <p>Prima del sole, prima di tutto: semi, acqua e mani che sanno quel che fanno.</p>
+  </div>
+  <div class="caption pos-rt">
+    <h2>Ogni germoglio ha i suoi tempi</h2>
+    <p>Qui nessuno ha fretta: nella piana di Albenga le cose buone crescono con calma.</p>
+  </div>
+  <div class="caption pos-lt">
+    <h2>Sole, mare e pazienza</h2>
+    <p>L'aria di Liguria fa metà del lavoro. L'altra metà la fa chi l'orto lo conosce da una vita.</p>
+  </div>
+  <div class="caption pos-cb">
+    <h2>Pronti per il raccolto</h2>
+    <p>Trombette, carciofi violetti, cuore di bue, asparagi: quando sono pronti loro, siamo pronti noi.</p>
+  </div>
+</section>
+
+<!-- INTERLUDIO: CAPITOLO 2 -->
+<section class="interlude scuro">
+  <div class="mini">Capitolo secondo · Il viaggio</div>
+  <p>Quando l'ultima cassetta è legata sull'Ape, il sole è appena alzato. Si parte: il banco aspetta.</p>
+</section>
+
+<!-- SCENA 2: IL VIAGGIO -->
+<section class="scene" id="s2" data-path="frames/s2/" data-total="50">
+  <canvas></canvas>
+  <img class="poster-img" src="frames/s2/poster.webp" alt="Ape Piaggio carica di cassette tra gli ulivi" loading="lazy">
+  <div class="caption pos-lb">
+    <h2>All'alba si parte</h2>
+    <p>Il motore borbotta, le cassette sono ben strette: il raccolto lascia la campagna.</p>
+  </div>
+  <div class="caption pos-rt">
+    <h2>Pochi chilometri, fatti bene</h2>
+    <p>Niente magazzini, niente attese: solo la strada che scende tra gli ulivi.</p>
+  </div>
+  <div class="caption pos-lt">
+    <h2>Il mare davanti, l'orto alle spalle</h2>
+    <p>Ogni tornante avvicina il banco, e la freschezza non fa in tempo a perdersi.</p>
+  </div>
+  <div class="caption pos-cb">
+    <h2>Albenga in vista</h2>
+    <p>Le case colorate, i campanili, il profumo del mattino: ci siamo quasi.</p>
+  </div>
+</section>
+
+<!-- INTERLUDIO: CAPITOLO 3 -->
+<section class="interlude">
+  <div class="mini">Capitolo terzo · La bottega</div>
+  <p>Via Fortino 6, ore sette e mezza. La tenda si srotola, la vetrina si accende: Albenga ha fame di colore.</p>
+</section>
+
+<!-- SCENA 3: LA BOTTEGA -->
+<section class="scene" id="s3" data-path="frames/s3/" data-total="50">
+  <canvas></canvas>
+  <img class="poster-img" src="frames/s3/poster.webp" alt="La bottega Frutta e Verdura Enrico ad Albenga" loading="lazy">
+  <div class="caption pos-lb">
+    <h2>Eccoci a casa</h2>
+    <p>L'Ape si ferma davanti alla vetrina: è ora di scaricare.</p>
+  </div>
+  <div class="caption pos-rt">
+    <h2>Il banco prende colore</h2>
+    <p>Cassetta dopo cassetta: arance, pomodori, trombette, basilico appena colto.</p>
+  </div>
+  <div class="caption pos-lt">
+    <h2>Scelto a mano, raccontato a voce</h2>
+    <p>Chiedici da dove arriva: te lo diciamo, perché c'eravamo.</p>
+  </div>
+  <div class="caption pos-cb">
+    <h2>Vi aspettiamo da Enrico</h2>
+    <p>Via Fortino 6, Albenga. Il banco più colorato del quartiere — manchi solo tu.</p>
+  </div>
+</section>
+
+<!-- INTERLUDIO: CHIUSURA -->
+<section class="interlude scuro">
+  <div class="mini">Ogni giorno, da una vita</div>
+  <p>Questa storia si ripete ogni mattina, dal lunedì al sabato. L'unico finale che cambia è quello che ti porti a casa.</p>
+</section>
+
+<!-- I 4 DI ALBENGA -->
+<section class="prodotti">
+  <div class="kicker">Le nostre stelle</div>
+  <h2>I 4 di Albenga</h2>
+  <p>Le quattro eccellenze della piana, coltivate a due passi dalla bottega. E poi c'è il basilico: dei 4 non è, ma ad Albenga non manca mai.</p>
+  <div class="grid">
+    <div class="card"><img src="frames/prod-zucchina.webp" alt="Zucchina trombetta di Albenga"><h3>Zucchina trombetta</h3><span>Dolce, soda, inconfondibile</span></div>
+    <div class="card"><img src="frames/prod-carciofo.webp" alt="Carciofo violetto di Albenga"><h3>Carciofo violetto</h3><span>Tenero, anche crudo</span></div>
+    <div class="card"><img src="frames/prod-pomodoro.webp" alt="Pomodoro cuore di bue di Albenga"><h3>Cuore di bue</h3><span>Il re dell'insalata</span></div>
+    <div class="card"><img src="frames/prod-asparago.webp" alt="Asparago violetto di Albenga"><h3>Asparago violetto</h3><span>Raro e prezioso</span></div>
+    <div class="card ospite"><img src="frames/prod-basilico.webp" alt="Basilico ligure"><h3>Basilico</h3><span>Profumo di pesto</span></div>
+  </div>
+</section>
+
+<!-- DOVE TROVARCI -->
+<section class="info" id="dove">
+  <div class="info-wrap">
+    <div>
+      <div class="kicker">Vieni a trovarci</div>
+      <h2>La bottega</h2>
+      <div class="info-block">
+        <h3>📍 Indirizzo</h3>
+        <p>Via Fortino 6, 17031 Albenga (SV)</p>
+      </div>
+      <div class="info-block">
+        <h3>🕐 Orari</h3>
+        <!-- TODO: orari da confermare con Enrico -->
+        <ul class="orari-list" id="orari">
+          <li><span>Orari in aggiornamento</span><span>—</span></li>
+          <li><span>Chiamaci per info</span><span>0182 52571</span></li>
+        </ul>
+      </div>
+      <div class="info-block">
+        <h3>📞 Telefono</h3>
+        <p><a href="tel:+39018252571" style="color:inherit">0182 52571</a></p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-arancio" href="https://www.google.com/maps/place/Frutta+E+Verdura+Enrico/@44.0466326,8.2206611,17z" target="_blank" rel="noopener">Indicazioni stradali</a>
+        <a class="btn btn-ghost" href="tel:+39018252571">Chiama ora</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/p/Frutta-e-verdura-Enrico-100075497484728/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="mappa">
+      <iframe title="Mappa — Frutta e Verdura Enrico, Via Fortino 6, Albenga" loading="lazy"
+        src="https://www.google.com/maps?q=Frutta%20e%20Verdura%20Enrico%2C%20Via%20Fortino%206%2C%20Albenga&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Frutta e Verdura Enrico · Via Fortino 6, Albenga (SV) · <a href="tel:+39018252571">0182 52571</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const hasGsap = typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined';
+  if (reduced || !hasGsap) { document.body.classList.add('no-motion'); return; }
+  gsap.registerPlugin(ScrollTrigger);
+
+  const isMobile = matchMedia('(max-width:768px)').matches;
+  const saveData = navigator.connection && navigator.connection.saveData;
+  const STEP = (isMobile || saveData) ? 2 : 1;   // su mobile carica 1 frame su 2
+  const DPR = Math.min(window.devicePixelRatio || 1, 1.75);
+
+  class Scene {
+    constructor(el){
+      this.el = el;
+      this.canvas = el.querySelector('canvas');
+      this.ctx = this.canvas.getContext('2d');
+      this.path = el.dataset.path;
+      this.total = +el.dataset.total;
+      this.indices = [];
+      for (let i = 1; i <= this.total; i += STEP) this.indices.push(i);
+      this.images = new Array(this.indices.length).fill(null);
+      this.loadedCount = 0;
+      this.current = 0;
+      this.started = false;
+      this.onProgress = null;
+      this.resize();
+    }
+    resize(){
+      const w = this.el.clientWidth, h = this.el.clientHeight;
+      this.canvas.width = Math.round(w * DPR);
+      this.canvas.height = Math.round(h * DPR);
+      this.draw(this.current, true);
+    }
+    load(){
+      if (this.started) return; this.started = true;
+      let inFlight = 0, next = 0;
+      const launch = () => {
+        while (inFlight < 6 && next < this.indices.length) {
+          const slot = next++;
+          inFlight++;
+          const img = new Image();
+          img.decoding = 'async';
+          img.onload = img.onerror = () => {
+            inFlight--;
+            this.images[slot] = img.complete && img.naturalWidth ? img : null;
+            this.loadedCount++;
+            if (this.onProgress) this.onProgress(this.loadedCount / this.indices.length);
+            if (slot === 0 || Math.abs(slot - this.current) < 3) this.draw(this.current, true);
+            launch();
+          };
+          img.src = this.path + 'f_' + String(this.indices[slot]).padStart(3,'0') + '.webp';
+        }
+      };
+      launch();
+    }
+    frameFor(progress){
+      return Math.min(this.indices.length - 1, Math.round(progress * (this.indices.length - 1)));
+    }
+    draw(slot, force){
+      if (!force && slot === this.lastDrawn) return;
+      // usa il frame caricato più vicino (preferibilmente <= slot)
+      let img = null, j = slot;
+      while (j >= 0 && !(img = this.images[j])) j--;
+      if (!img) { j = slot; while (j < this.images.length && !(img = this.images[j])) j++; }
+      if (!img) return;
+      this.lastDrawn = slot; this.current = slot;
+      const cw = this.canvas.width, ch = this.canvas.height;
+      const iw = img.naturalWidth, ih = img.naturalHeight;
+      const s = Math.max(cw/iw, ch/ih);
+      const dw = iw*s, dh = ih*s;
+      this.ctx.drawImage(img, (cw-dw)/2, (ch-dh)/2, dw, dh);
+    }
+  }
+
+  const scenes = [...document.querySelectorAll('.scene')].map(el => new Scene(el));
+
+  // barra di caricamento della scena 1 nell'hero
+  const loadbar = document.getElementById('loadbar');
+  scenes[0].onProgress = p => {
+    loadbar.style.width = (p*100).toFixed(0) + '%';
+    if (p >= 1) setTimeout(()=> loadbar.style.opacity = 0, 600);
+  };
+  scenes[0].load();                       // scena 1 subito
+  setTimeout(()=> scenes[1].load(), 1500); // le altre poco dopo
+  setTimeout(()=> scenes[2].load(), 3000);
+
+  // hero: leggero parallax + fade del titolo
+  gsap.to('.hero-inner', {
+    opacity: 0, y: -60, ease: 'none',
+    scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom 35%', scrub: true }
+  });
+
+  // scrub per ogni scena
+  scenes.forEach((scene) => {
+    const caps = [...scene.el.querySelectorAll('.caption')];
+    const state = { p: 0 };
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: scene.el,
+        start: 'top top',
+        end: '+=320%',
+        pin: true,
+        scrub: 0.6,
+        anticipatePin: 1,
+        onEnter: () => scene.load(),
+        onRefresh: () => scene.resize()
+      }
+    });
+    tl.to(state, {
+      p: 1, ease: 'none', duration: 1,
+      onUpdate: () => scene.draw(scene.frameFor(state.p))
+    }, 0);
+    // didascalie: una sequenza di momenti lungo lo scrub
+    const n = caps.length, seg = 0.94 / n;
+    caps.forEach((cap, i) => {
+      const t0 = 0.03 + i * seg;
+      tl.fromTo(cap, {opacity:0, y:40}, {opacity:1, y:0, duration: seg*0.25}, t0);
+      const ultimaFinale = (scene.el.id === 's3' && i === n - 1);
+      if (!ultimaFinale) tl.to(cap, {opacity:0, y:-30, duration: seg*0.2}, t0 + seg*0.75);
+    });
+  });
+
+  // interludi: comparsa morbida dei testi
+  gsap.utils.toArray('.interlude').forEach(sec => {
+    gsap.from(sec.children, {opacity:0, y:36, duration:.9, stagger:.15, ease:'power2.out',
+      scrollTrigger:{trigger: sec, start:'top 80%'}});
+  });
+
+  let rT;
+  addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(()=>{ scenes.forEach(s=>s.resize()); ScrollTrigger.refresh(); }, 200); });
+})();
+</script>
+<noscript><style>.scene canvas{display:none}.scene .poster-img{display:block}.caption{opacity:1}</style></noscript>
+</body>
+</html>

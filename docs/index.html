@@ -2,419 +2,805 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Frutta e Verdura Enrico — Albenga | Fresco ogni mattina in Via Fortino 6</title>
-<meta name="description" content="Frutta e verdura fresca di stagione ad Albenga: zucchina trombetta, carciofo violetto, cuore di bue e asparago violetto. Vieni a trovarci in Via Fortino 6.">
+<meta name="description" content="Frutta e verdura fresca di stagione ad Albenga, dalla Piana: pesche, cuore di bue, trombette, limoni. Vieni al banco in Via Fortino 6. Tel 0182 52571.">
+<meta name="theme-color" content="#16331b">
 <meta property="og:title" content="Frutta e Verdura Enrico — Albenga">
-<meta property="og:description" content="Dalla terra al banco, ogni mattina. Frutta e verdura fresca in Via Fortino 6, Albenga.">
+<meta property="og:description" content="Raccolto ieri, al banco stamattina. Frutta e verdura fresca in Via Fortino 6, Albenga.">
 <meta property="og:image" content="og-image.jpg">
 <meta property="og:type" content="business.business">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍊</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M5 19C5 11 11 5 19 5c0 8-6 14-14 14Z' fill='%23274c2b'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="frames/s1/f_001.webp">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="frames/s1/poster.webp">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "GroceryStore",
-  "name": "Frutta e Verdura Enrico",
-  "image": "og-image.jpg",
-  "telephone": "+39 0182 52571",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Via Fortino 6",
-    "postalCode": "17031",
-    "addressLocality": "Albenga",
-    "addressRegion": "SV",
-    "addressCountry": "IT"
-  },
-  "geo": { "@type": "GeoCoordinates", "latitude": 44.0466288, "longitude": 8.223236 },
-  "sameAs": ["https://www.facebook.com/p/Frutta-e-verdura-Enrico-100075497484728/"]
+  "@context":"https://schema.org","@type":"GroceryStore",
+  "name":"Frutta e Verdura Enrico","image":"og-image.jpg","telephone":"+39 0182 52571",
+  "address":{"@type":"PostalAddress","streetAddress":"Via Fortino 6","postalCode":"17031","addressLocality":"Albenga","addressRegion":"SV","addressCountry":"IT"},
+  "geo":{"@type":"GeoCoordinates","latitude":44.0466288,"longitude":8.223236},
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"13:30"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"16:00","closes":"19:00"}
+  ],
+  "sameAs":["https://www.facebook.com/p/Frutta-e-verdura-Enrico-100075497484728/"]
 }
 </script>
 <style>
 :root{
-  --verde:#2f6b35; --verde-scuro:#1e4423; --crema:#faf5ea; --crema-scura:#f1e8d6;
-  --terracotta:#c75b39; --arancio:#e8923a; --legno:#8a5a33; --inchiostro:#26301f;
+  --ink:#1d2a19; --green:#274c2b; --green-d:#15301a; --green-l:#436a44;
+  --paper:#f1ebdc; --paper-2:#e9e1cd; --card:#faf6ea;
+  --terra:#a8412a; --terra-d:#8a3520; --terra-2:#bb5a3f;
+  --muted:#6c7158; --faint:#8b8f74; --line:#d7cdb4; --line-2:#cabfa2;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
+  --mono:'DM Mono',ui-monospace,'SFMono-Regular',monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:auto}
-body{font-family:'Manrope',system-ui,sans-serif;background:var(--crema);color:var(--inchiostro);overflow-x:hidden}
-h1,h2,h3{font-family:'Fraunces',serif;line-height:1.08}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.038;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:-.012em}
 img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.ic{width:1em;height:1em;display:inline-block;vertical-align:-.12em;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.wrap{max-width:940px;margin:0 auto;padding:0 22px;position:relative;z-index:1}
+.lbl{font-family:var(--mono);font-weight:500;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
+section{scroll-margin-top:76px}
+.hr{height:1px;background:var(--line);border:0;margin:0}
 
-/* ---------- HERO ---------- */
-.hero{position:relative;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
-.hero-bg{position:absolute;inset:0;background:url('frames/s1/poster.webp') center/cover no-repeat;transform:scale(1.04)}
-.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,28,16,.25) 0%,rgba(20,28,16,.45) 65%,rgba(20,28,16,.72) 100%)}
-.hero-inner{position:relative;z-index:2;color:#fdfaf2;padding:0 24px;max-width:900px}
-.kicker{letter-spacing:.35em;font-weight:800;font-size:clamp(.68rem,1.6vw,.85rem);text-transform:uppercase;opacity:.92}
-.hero h1{font-size:clamp(2.4rem,8vw,5.4rem);font-weight:700;margin:.35em 0 .25em;text-shadow:0 4px 30px rgba(0,0,0,.35)}
-.hero p.sub{font-size:clamp(1rem,2.6vw,1.4rem);font-weight:600;opacity:.95}
-.scroll-cue{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:2;color:#fdfaf2;font-size:.8rem;letter-spacing:.25em;text-transform:uppercase;opacity:.85}
-.scroll-cue::after{content:'';display:block;width:1px;height:42px;margin:10px auto 0;background:linear-gradient(#fdfaf2,transparent);animation:cue 1.6s ease-in-out infinite}
-@keyframes cue{0%{transform:scaleY(.3);transform-origin:top}55%{transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
-#loadbar{position:absolute;top:0;left:0;height:3px;width:0%;background:var(--arancio);z-index:5;transition:width .3s;border-radius:0 3px 3px 0}
+/* ---- HEADER (masthead sticky) ---- */
+.head{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--line);transition:box-shadow .25s,background .25s}
+body.scrolled .head{background:rgba(241,235,220,.93);backdrop-filter:blur(8px);box-shadow:0 1px 0 var(--line),0 10px 24px -18px rgba(30,22,8,.5)}
+.head-in{max-width:940px;margin:0 auto;padding:11px 22px;display:flex;align-items:center;gap:16px}
+.brand{display:flex;align-items:center;gap:9px;min-width:0;overflow:hidden}
+.brand .mk{color:var(--green);font-size:1.35rem;line-height:0}
+.brand b{font-family:var(--serif);font-weight:600;font-size:1.06rem;color:var(--green-d);white-space:nowrap;letter-spacing:-.01em;overflow:hidden;text-overflow:ellipsis}
+.head .status{margin-left:auto;flex:0 0 auto;display:inline-flex;align-items:center;gap:.5em;font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.head .status .st-more{margin-left:-.1em}
+@media(max-width:600px){.head .status .st-more{display:none}}
+.dot{width:7px;height:7px;border-radius:50%;background:#b4b09a;flex:0 0 auto}
+.is-open .dot{background:#3f8a43}.is-closed .dot{background:var(--terra)}
+.is-open .status{color:var(--green-l)}.is-closed .status{color:var(--terra)}
+.head .tel{display:inline-flex;align-items:center;gap:.4em;font-weight:600;font-size:.9rem;color:var(--ink);padding-left:14px;margin-left:14px;border-left:1px solid var(--line)}
+.head .tel .ic{font-size:1.05em;color:var(--green-l)}
+@media(max-width:740px){.head .tel{display:none}}
+@media(max-width:600px){.brand b{font-size:.95rem}}
+@media(max-width:400px){.brand b{font-size:.86rem}.head-in{padding-left:18px;padding-right:18px}}
 
-/* ---------- SCENE SCRUB ---------- */
-.scene{position:relative;height:100vh;height:100svh;overflow:hidden}
-.scene canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
-.scene .poster-img{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.caption{position:absolute;z-index:3;max-width:min(560px,86vw);opacity:0;color:#fdfaf2;text-shadow:0 2px 18px rgba(10,16,8,.55)}
-.caption h2{font-size:clamp(1.7rem,5vw,3.2rem);margin-bottom:.3em}
-.caption p{font-size:clamp(.95rem,2.4vw,1.2rem);font-weight:600;line-height:1.5}
-.pos-lb{left:6vw;bottom:12vh}
-.pos-rt{right:6vw;top:14vh;text-align:right}
-.pos-lt{left:6vw;top:14vh}
-.pos-cb{left:0;right:0;bottom:12vh;margin:0 auto;text-align:center}
-@media (max-width:768px){
-  .caption{left:6vw !important;right:6vw !important;top:auto !important;bottom:9vh !important;text-align:left !important;max-width:88vw}
-}
+/* ---- HERO ---- */
+.hero{padding:54px 0 30px;text-align:center}
+.hero .lbl{color:var(--green-l);display:inline-block;margin-bottom:22px}
+.hero h1{font-size:clamp(2.5rem,8.5vw,4.6rem);font-weight:600;letter-spacing:-.025em;color:var(--ink)}
+.hero h1 .l2{display:block;font-style:italic;font-weight:500;color:var(--green)}
+.hero .sub{max-width:500px;margin:20px auto 0;font-size:clamp(1.02rem,2.4vw,1.18rem);color:var(--muted)}
+.hero-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 26px;margin-top:26px;font-family:var(--mono);font-size:.78rem;color:var(--faint)}
+.hero-meta a,.hero-meta span{display:inline-flex;align-items:center;gap:.5em}
+.hero-meta .ic{font-size:1.15em;color:var(--green-l)}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:32px}
+.act{display:inline-flex;align-items:center;gap:.55em;padding:10px 17px;border:1px solid var(--line-2);border-radius:7px;font-weight:600;font-size:.9rem;color:var(--ink);background:var(--card);transition:border-color .18s,color .18s,transform .12s}
+.act .ic{font-size:1.1em;color:var(--green-l)}
+.act:hover{border-color:var(--green);color:var(--green-d)}
+.act:active{transform:scale(.97)}
+@media(max-width:560px){.actions{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;padding-bottom:4px}.actions::-webkit-scrollbar{display:none}.act{flex:0 0 auto}}
 
-/* ---------- INTERLUDI NARRATIVI ---------- */
-.interlude{padding:clamp(90px,16vw,180px) 24px;text-align:center}
-.interlude .mini{font-size:clamp(.7rem,1.5vw,.85rem);letter-spacing:.35em;text-transform:uppercase;font-weight:800;color:var(--terracotta);margin-bottom:26px}
-.interlude p{font-family:'Fraunces',serif;font-size:clamp(1.5rem,4.2vw,2.5rem);font-weight:600;line-height:1.4;max-width:780px;margin:0 auto;color:var(--verde-scuro)}
-.interlude.scuro{background:var(--verde-scuro)}
-.interlude.scuro p{color:var(--crema)}
-.interlude.scuro .mini{color:var(--arancio)}
+/* ---- STORIA ---- */
+.storia{position:relative;height:300vh;margin-top:26px}
+.storia-head{text-align:center;margin-bottom:20px}
+.storia-head .lbl{color:var(--terra);display:inline-flex;align-items:center;gap:.6em}
+.storia-head h2{font-size:clamp(1.65rem,4.6vw,2.5rem);color:var(--green-d);margin-top:.3em}
+.stage{position:sticky;top:9svh;height:82svh;max-height:640px;border-radius:10px;overflow:hidden;background:#14210f;
+  box-shadow:0 30px 60px -30px rgba(20,30,12,.8),inset 0 0 0 1px rgba(255,255,255,.06)}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.stage-grad{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(10,16,6,.12),rgba(10,16,6,0) 30%,rgba(10,16,6,.2) 60%,rgba(10,16,6,.82))}
+.stage-cap{position:absolute;left:30px;right:30px;bottom:58px;z-index:3;color:#f4efe1;max-width:540px}
+.stage-cap .num{font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#dcae7e}
+.stage-cap h3{font-size:clamp(1.5rem,4.2vw,2.2rem);color:#fbf8f0;margin:.22em 0 .2em;text-shadow:0 2px 24px rgba(8,12,4,.5)}
+.stage-cap p{font-size:clamp(.95rem,2.3vw,1.1rem);color:rgba(244,239,225,.92);text-shadow:0 1px 16px rgba(8,12,4,.5)}
+.stage-cap .beat{transition:opacity .45s,transform .45s}
+.stage-dots{position:absolute;left:30px;bottom:30px;z-index:3;display:flex;gap:7px}
+.stage-dots i{width:22px;height:3px;background:rgba(244,239,225,.3);transition:.3s}
+.stage-dots i.on{background:#dcae7e;width:30px}
+.stage-prog{position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--terra-2);z-index:4;transition:width .08s linear}
+.stage-fs{position:absolute;top:15px;right:16px;z-index:4;display:inline-flex;align-items:center;gap:.45em;color:rgba(244,239,225,.85);font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border:1px solid rgba(244,239,225,.22);border-radius:6px;background:rgba(14,22,8,.4)}
+.stage-fs:hover{color:#fff;border-color:rgba(244,239,225,.5)}
+.story-load{position:absolute;inset:0;display:grid;place-items:center;z-index:2;font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:#9aa385}
+.storia-tie{text-align:center;font-family:var(--serif);font-style:italic;font-weight:500;color:var(--green);font-size:clamp(1.05rem,2.8vw,1.35rem);margin-top:22px}
 
-/* ---------- PRODOTTI ---------- */
-.prodotti{padding:clamp(64px,10vw,120px) 24px;background:var(--crema);text-align:center}
-.prodotti .kicker{color:var(--terracotta)}
-.prodotti h2{font-size:clamp(1.9rem,5vw,3.2rem);color:var(--verde-scuro);margin:.3em 0 .4em}
-.prodotti>p{max-width:560px;margin:0 auto 48px;font-weight:600;color:#55603f}
-.grid{display:flex;flex-wrap:wrap;gap:28px;justify-content:center;max-width:1100px;margin:0 auto}
-.card{width:180px}
-.card img{width:150px;height:150px;border-radius:50%;object-fit:cover;margin:0 auto 14px;border:5px solid #fff;box-shadow:0 10px 30px rgba(60,50,20,.18);transition:transform .35s}
-.card:hover img{transform:scale(1.07) rotate(-2deg)}
-.card h3{font-size:1.1rem;color:var(--verde-scuro)}
-.card span{font-size:.82rem;color:#7a8261;font-weight:600}
-.card.ospite{position:relative}
-.card.ospite::before{content:'il +1 di casa';position:absolute;top:-6px;right:10px;background:var(--terracotta);color:#fff;font-size:.66rem;font-weight:800;padding:4px 11px;border-radius:999px;letter-spacing:.06em;transform:rotate(6deg);z-index:2;box-shadow:0 4px 12px rgba(199,91,57,.4)}
+/* ---- SECTION ---- */
+.sec{padding:58px 0 8px}
+.sec-top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.sec-top .lbl{color:var(--terra);margin-bottom:9px;display:block}
+.sec-top h2{font-size:clamp(1.7rem,4.6vw,2.5rem);color:var(--green-d)}
+.sec-top .note{font-family:var(--mono);font-size:.72rem;color:var(--faint);letter-spacing:.04em;padding-bottom:5px}
 
-/* ---------- INFO ---------- */
-.info{background:var(--verde-scuro);color:var(--crema);padding:clamp(64px,9vw,110px) 24px}
-.info-wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:stretch}
-@media (max-width:860px){.info-wrap{grid-template-columns:1fr}}
-.info .kicker{color:var(--arancio)}
-.info h2{font-size:clamp(1.9rem,5vw,3rem);margin:.3em 0 .6em}
-.info-block{margin-bottom:26px}
-.info-block h3{font-size:1.05rem;color:var(--arancio);margin-bottom:.35em;letter-spacing:.04em}
-.info-block p,.info-block li{font-weight:600;line-height:1.65;font-size:1.02rem}
-.orari-list{list-style:none}
-.orari-list li{display:flex;justify-content:space-between;max-width:340px;border-bottom:1px dashed rgba(250,245,234,.25);padding:.3em 0}
-.btn-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
-.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:800;text-decoration:none;font-size:.95rem;transition:transform .2s,box-shadow .2s}
-.btn:hover{transform:translateY(-2px)}
-.btn-arancio{background:var(--arancio);color:#2c1d08;box-shadow:0 8px 24px rgba(232,146,58,.35)}
-.btn-ghost{border:2px solid rgba(250,245,234,.5);color:var(--crema)}
-.mappa{border-radius:18px;overflow:hidden;min-height:380px;box-shadow:0 18px 50px rgba(0,0,0,.35)}
-.mappa iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+/* ---- LISTINO ---- */
+.lst{margin-top:26px;border-top:2px solid var(--ink)}
+.lst-item{display:flex;align-items:flex-start;gap:14px;padding:17px 2px 15px;border-bottom:1px solid var(--line)}
+.lst-thumb{flex:0 0 auto;width:52px;height:52px;border-radius:6px;object-fit:cover;border:1px solid var(--line);background:var(--paper-2)}
+.lst-main{flex:1 1 auto;min-width:0}
+.lst-name{font-family:var(--serif);font-weight:600;font-size:1.16rem;color:var(--ink);line-height:1.2;display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.lst-new{font-family:var(--mono);font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:var(--terra);border:1px solid var(--terra);border-radius:3px;padding:1px 5px;line-height:1.5;font-weight:500}
+.lst-desc{font-size:.9rem;color:var(--muted);margin-top:2px}
+.lst-lead{flex:1 1 auto;align-self:stretch;min-width:18px;border-bottom:1.5px dotted var(--line-2);margin:0 4px 7px;transform:translateY(-1px)}
+.lst-price{flex:0 0 auto;font-family:var(--serif);font-weight:600;font-size:1.34rem;color:var(--terra);white-space:nowrap;line-height:1.1;text-align:right}
+.lst-price .u{font-family:var(--mono);font-weight:400;font-size:.66rem;color:var(--faint);letter-spacing:.02em;margin-left:3px}
+@media(max-width:540px){.lst-lead{display:none}.lst-name{font-size:1.08rem}.lst-price{font-size:1.2rem}}
 
-footer{background:#142417;color:#9fb59a;text-align:center;padding:28px 24px;font-size:.85rem;font-weight:600}
-footer a{color:#c8d8c2}
+/* ---- OFFERTE ---- */
+.offerte{margin-top:30px;border:1px solid var(--line-2);border-radius:12px;background:var(--card);padding:clamp(22px,4vw,32px)}
+.offerte .lbl{color:var(--terra);display:flex;align-items:center;gap:.6em}
+.offerte h2{font-size:clamp(1.45rem,4vw,2.05rem);color:var(--green-d);margin:.4em 0 .1em}
+.offerte h2 em{font-style:italic;color:var(--terra)}
+.offerte .lead{color:var(--muted);font-size:.95rem;max-width:520px}
+.cd{display:flex;align-items:center;gap:11px;margin:20px 0 24px;font-family:var(--mono)}
+.cd .k{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+.cd .t{font-size:1.5rem;font-weight:500;color:var(--green-d);letter-spacing:.02em;font-variant-numeric:tabular-nums}
+.cd .closed{font-size:.85rem;color:var(--terra);letter-spacing:.02em}
+.off-list{display:grid;gap:0;border-top:1px solid var(--line)}
+.off-item{display:flex;align-items:center;gap:14px;padding:15px 2px;border-bottom:1px solid var(--line)}
+.off-item:last-child{border-bottom:0}
+.off-thumb{width:46px;height:46px;border-radius:6px;object-fit:cover;border:1px solid var(--line);flex:0 0 auto}
+.off-main{flex:1 1 auto;min-width:0}
+.off-main h3{font-family:var(--serif);font-size:1.08rem;color:var(--ink);font-weight:600;line-height:1.2}
+.off-main p{font-size:.86rem;color:var(--muted)}
+.off-price{font-family:var(--serif);font-weight:600;font-size:1.25rem;color:var(--terra);white-space:nowrap}
 
-/* ---------- FALLBACK senza animazioni ---------- */
-.no-motion .scene{height:auto;overflow:visible;background:var(--crema)}
-.no-motion .scene canvas{display:none}
-.no-motion .scene .poster-img{display:block;position:static;height:auto}
-.no-motion .caption{position:static;opacity:1;max-width:680px;margin:26px auto;text-align:center !important;color:var(--verde-scuro);text-shadow:none}
+/* ---- ENRICO ---- */
+.enrico{margin-top:46px;padding-top:46px;border-top:1px solid var(--line)}
+.enrico h2{font-size:clamp(1.9rem,5.2vw,2.9rem);color:var(--green-d);margin-bottom:.55em;max-width:13ch}
+.enrico-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:38px;align-items:start}
+@media(max-width:740px){.enrico-grid{grid-template-columns:1fr;gap:26px}}
+.enrico p{color:#41492f;margin-bottom:1.05em;font-size:1.04rem}
+.enrico .claim{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.25rem,3.2vw,1.6rem);color:var(--green);border-left:2px solid var(--terra);padding-left:18px;margin:1.2em 0 0}
+.foto-slot{border:1px solid var(--line-2);border-radius:10px;aspect-ratio:4/3;display:grid;place-items:center;text-align:center;color:var(--faint);background:var(--paper-2);overflow:hidden;cursor:pointer;position:relative}
+.foto-slot .ph{display:flex;flex-direction:column;align-items:center;gap:9px;padding:20px}
+.foto-slot .ph .ic{font-size:1.7rem;color:var(--green-l);stroke-width:1.4}
+.foto-slot .ph span{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em}
+.foto-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* ---- DOVE ---- */
+.dove{margin-top:56px}
+.dove-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--green-d);border-radius:12px;overflow:hidden}
+@media(max-width:740px){.dove-grid{grid-template-columns:1fr}}
+.dove-card{background:var(--green-d);color:#e7e9d8;padding:clamp(26px,4vw,38px)}
+.dove-card h2{color:#fff;font-size:clamp(1.7rem,4.4vw,2.3rem);margin-bottom:22px}
+.drow{display:flex;gap:13px;padding:14px 0;border-top:1px solid rgba(231,233,216,.16)}
+.drow:first-of-type{border-top:0;padding-top:0}
+.drow .ic{font-size:1.15rem;color:#9ec79a;margin-top:2px}
+.drow .k{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#9ec79a;margin-bottom:3px}
+.drow .v{font-size:1rem;font-weight:500}
+.drow .v a{border-bottom:1px solid rgba(231,233,216,.4)}
+.orari{list-style:none;font-size:.92rem}
+.orari li{display:flex;justify-content:space-between;gap:18px;max-width:300px;padding:2px 0}
+.orari li .g{color:rgba(231,233,216,.85)}
+.orari li .h{font-family:var(--mono);font-size:.82rem;color:#e7e9d8}
+.orari li.oggi .g,.orari li.oggi .h{color:#e8c79a;font-weight:600}
+.orari li.chiuso .h{color:#e08e72}
+.dbtns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:12px 19px;border-radius:7px;font-weight:600;font-size:.92rem;transition:transform .15s,opacity .15s}
+.btn .ic{font-size:1.1em}
+.btn:active{transform:scale(.97)}
+.btn-1{background:#e8c79a;color:#2c1f0a}
+.btn-2{border:1px solid rgba(231,233,216,.4);color:#e7e9d8}
+.btn-2:hover{border-color:#e7e9d8}
+.mappa{min-height:360px}
+.mappa iframe{width:100%;height:100%;min-height:360px;border:0;display:block;filter:saturate(.88)}
+
+/* ---- FOOTER ---- */
+footer{margin-top:60px;border-top:1px solid var(--line);padding:40px 22px 120px;text-align:center;position:relative;z-index:1}
+footer .fmk{color:var(--green);font-size:1.3rem;line-height:0}
+footer .fname{font-family:var(--serif);font-weight:600;font-size:1.4rem;color:var(--green-d);margin:10px 0 6px}
+footer .fmeta{font-family:var(--mono);font-size:.76rem;color:var(--faint);letter-spacing:.03em}
+footer .fmeta a{color:var(--green-l)}
+
+/* ---- MOBILE CTA ---- */
+.cta{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;gap:1px;background:var(--line);border-top:1px solid var(--line)}
+.cta a{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px;font-weight:600;font-size:.95rem;background:var(--paper);padding-bottom:calc(14px + env(safe-area-inset-bottom))}
+.cta a .ic{font-size:1.15em;color:var(--green)}
+.cta .c1{background:var(--green);color:#f2efe2}.cta .c1 .ic{color:#cfe0c6}
+@media(max-width:740px){.cta{display:flex}footer{padding-bottom:130px}}
+
+/* ---- ADMIN ---- */
+.fab{position:fixed;right:16px;bottom:16px;z-index:58;width:46px;height:46px;border-radius:50%;background:var(--card);border:1px solid var(--line-2);box-shadow:0 14px 30px -16px rgba(20,16,6,.7);display:grid;place-items:center;color:var(--green-l);font-size:1.2rem;transition:transform .2s}
+.fab:hover{transform:rotate(-10deg)}
+@media(max-width:740px){.fab{bottom:72px}}
+.adm-back{position:fixed;inset:0;z-index:90;background:rgba(20,28,14,.42);opacity:0;visibility:hidden;transition:.25s}
+.adm-back.open{opacity:1;visibility:visible}
+.adm{position:fixed;top:0;right:0;height:100%;width:min(430px,100%);z-index:91;background:var(--paper);box-shadow:-24px 0 60px -30px rgba(20,28,14,.7);transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+.adm.open{transform:none}
+.adm-top{display:flex;align-items:center;justify-content:space-between;padding:17px 18px;border-bottom:1px solid var(--line)}
+.adm-top .t{display:flex;align-items:center;gap:9px;font-family:var(--serif);font-weight:600;font-size:1.12rem;color:var(--green-d)}
+.adm-top .t .ic{color:var(--green-l);font-size:1.1em}
+.adm-x{width:36px;height:36px;border-radius:7px;color:var(--muted);display:grid;place-items:center;font-size:1.1rem}
+.adm-x:hover{background:var(--paper-2)}
+.adm-tabs{display:flex;gap:6px;padding:13px 15px 0}
+.adm-tab{flex:1;padding:9px;border-radius:8px;font-weight:600;font-size:.82rem;color:var(--muted);background:var(--paper-2)}
+.adm-tab.on{background:var(--green);color:#f2efe2}
+.adm-body{flex:1;overflow-y:auto;padding:15px 16px 18px}
+.adm-pane{display:none}.adm-pane.on{display:block}
+.hint{font-size:.8rem;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:9px;padding:11px 13px;margin-bottom:14px;line-height:1.55}
+.fld{margin-bottom:13px}
+.fld>.l{display:block;font-family:var(--mono);font-weight:500;font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);margin-bottom:5px}
+.fld input,.fld textarea,.fld select{width:100%;padding:11px 12px;border:1px solid var(--line-2);border-radius:8px;font-family:inherit;font-size:.94rem;background:#fff;color:var(--ink)}
+.fld input:focus,.fld textarea:focus{outline:0;border-color:var(--green-l)}
+.fld textarea{resize:vertical;min-height:88px;line-height:1.5}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.seg{display:flex;gap:5px;background:var(--paper-2);padding:4px;border-radius:9px}
+.seg button{flex:1;padding:9px;border-radius:6px;font-weight:600;font-size:.84rem;color:var(--muted)}
+.seg button.on{background:#fff;color:var(--green-d);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.erow{background:#fff;border:1px solid var(--line);border-radius:10px;padding:13px;margin-bottom:11px;position:relative}
+.erow .del{position:absolute;top:9px;right:9px;width:28px;height:28px;border-radius:6px;color:var(--terra);display:grid;place-items:center;background:#f7e9e4}
+.erow .l{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);display:block;margin:0 0 4px}
+.erow input{margin-bottom:8px}
+.erow .chk{display:flex;align-items:center;gap:8px;font-size:.84rem;font-weight:500;color:var(--muted);margin:2px 0 9px}
+.linkbtn{display:inline-flex;align-items:center;gap:.5em;font-size:.82rem;font-weight:600;color:var(--green-l)}
+.linkbtn .ic{font-size:1.05em}
+.addbtn{width:100%;padding:12px;border:1px dashed var(--line-2);border-radius:9px;font-weight:600;color:var(--green-l);background:#fff;display:flex;align-items:center;justify-content:center;gap:.5em}
+.day{background:#fff;border:1px solid var(--line);border-radius:9px;padding:11px 12px;margin-bottom:8px}
+.day .dh{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.day .dh b{font-size:.9rem;color:var(--ink)}
+.day .tt{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.day .tt input{padding:8px;font-size:.85rem;font-family:var(--mono);margin:0}
+.day.closed .tt{opacity:.35;pointer-events:none}
+.sw{position:relative;width:42px;height:24px;flex:0 0 auto}
+.sw input{opacity:0;width:0;height:0}
+.sw .s{position:absolute;inset:0;background:#c8bfa6;border-radius:999px;transition:.2s}
+.sw .s::before{content:'';position:absolute;width:18px;height:18px;left:3px;top:3px;background:#fff;border-radius:50%;transition:.2s}
+.sw input:checked+.s{background:var(--green)}
+.sw input:checked+.s::before{transform:translateX(18px)}
+.adm-foot{padding:13px 16px calc(13px + env(safe-area-inset-bottom));border-top:1px solid var(--line);display:flex;gap:10px}
+.adm-foot button{flex:1;padding:13px;border-radius:8px;font-weight:600}
+.save{background:var(--green);color:#f2efe2}
+.reset{background:var(--paper-2);color:var(--muted)}
+.adm-top .t{flex:1}
+.adm-logout{display:none;font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:7px 11px;border:1px solid var(--line-2);border-radius:7px;margin-right:6px}
+.adm-logout:hover{color:var(--terra);border-color:var(--terra)}
+.adm-editor{flex:1;display:flex;flex-direction:column;min-height:0}
+.adm-auth{display:none;padding:20px 16px;overflow-y:auto}
+.adm-auth .auth-intro{font-size:.92rem;color:var(--muted);line-height:1.55;margin-bottom:18px}
+.auth-err{color:var(--terra);font-size:.82rem;min-height:1.1em;margin:2px 0 10px}
+.authgo{width:100%;padding:13px;border-radius:8px}
+.adm-mode{font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);padding:11px 16px 0}
+.adm-mode.live{color:var(--green-l)}
+.toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(16px);z-index:99;background:var(--green-d);color:#f2efe2;padding:11px 20px;border-radius:8px;font-weight:500;font-size:.88rem;opacity:0;transition:.28s;pointer-events:none;box-shadow:0 16px 34px -18px rgba(0,0,0,.6)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ---- REVEAL ---- */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ---- NO-MOTION FALLBACK ---- */
+.no-motion .storia{height:auto}
+.no-motion .stage{position:static;height:auto;max-height:none;background:transparent;box-shadow:none;border-radius:0;display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+@media(max-width:680px){.no-motion .stage{grid-template-columns:1fr}}
+.no-motion .stage>canvas,.no-motion .stage-grad,.no-motion .stage-dots,.no-motion .stage-prog,.no-motion .stage-fs,.no-motion .story-load,.no-motion .stage>.stage-cap{display:none}
+.no-motion .nm{position:relative;border-radius:9px;overflow:hidden;min-height:260px;box-shadow:0 24px 44px -30px rgba(20,30,12,.8)}
+.no-motion .nm img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.no-motion .nm .stage-cap{position:absolute;left:20px;right:20px;bottom:22px;display:block}
+.motion .nm{display:none}
 </style>
 </head>
-<body>
+<body class="motion">
 
-<!-- HERO -->
-<header class="hero">
-  <div id="loadbar"></div>
-  <div class="hero-bg"></div>
-  <div class="hero-inner">
-    <div class="kicker">Albenga · Liguria</div>
-    <h1>Frutta e Verdura<br>Enrico</h1>
-    <p class="sub">Dalla terra al banco, ogni mattina.</p>
+<!-- ICON SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.3"/><path d="M12 7.4V12l3 1.9"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s6.4-5.4 6.4-10.4A6.4 6.4 0 0 0 5.6 10.6C5.6 15.6 12 21 12 21Z"/><circle cx="12" cy="10.3" r="2.3"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.4 4.6h2.9l1.2 3.1-1.7 1.4a11 11 0 0 0 4.6 4.6l1.4-1.7 3.1 1.2v2.9a1.6 1.6 0 0 1-1.7 1.6A14.4 14.4 0 0 1 4.8 6.3 1.6 1.6 0 0 1 6.4 4.6Z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4.6 6.3A1.7 1.7 0 0 1 6.3 4.6h11.4a1.7 1.7 0 0 1 1.7 1.7v7.2a1.7 1.7 0 0 1-1.7 1.7H9.4L5.4 18.6V15.2H6.3a1.7 1.7 0 0 1-1.7-1.7Z"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 11 11 5 19 5c0 8-6 14-14 14Z"/><path d="M5.5 18.5C9 15 12.5 11.5 16 8"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M8.5 15.5 15.5 8.5"/><path d="M9.5 8.5h6v6"/></symbol>
+<symbol id="i-basket" viewBox="0 0 24 24"><path d="M5.3 9h13.4l-1.2 8.1a1.6 1.6 0 0 1-1.6 1.4H8.1a1.6 1.6 0 0 1-1.6-1.4Z"/><path d="M8.6 9 12 4.3 15.4 9"/><path d="M9.7 12.3v3M14.3 12.3v3"/></symbol>
+<symbol id="i-tag" viewBox="0 0 24 24"><path d="M4.7 11.7 11.4 5h6.9v6.9l-6.7 6.6a1.5 1.5 0 0 1-2.1 0l-4.8-4.8a1.5 1.5 0 0 1 0-2Z"/><circle cx="14.8" cy="9.2" r="1.1"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 20v-7.5"/><path d="M12 12.5c0-3 2.6-5 6.2-5 0 3-2.6 5-6.2 5Z"/><path d="M12 13.5c0-2.6-2.1-4.6-5.2-4.6 0 2.6 2.1 4.6 5.2 4.6Z"/></symbol>
+<symbol id="i-key" viewBox="0 0 24 24"><circle cx="8.6" cy="8.6" r="3.6"/><path d="M11.1 11.1 19 19M16.2 16.2l1.8-1.8M14.4 14.4l1.8-1.8"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5 17.5 17.5M17.5 6.5 6.5 17.5"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5.5v13M5.5 12h13"/></symbol>
+<symbol id="i-trash" viewBox="0 0 24 24"><path d="M5.5 7h13M9.6 7V5.6h4.8V7M6.8 7l.8 11a1.6 1.6 0 0 0 1.6 1.5h5.6a1.6 1.6 0 0 0 1.6-1.5l.8-11"/></symbol>
+<symbol id="i-camera" viewBox="0 0 24 24"><path d="M4.5 8.6h2.8l1.2-2h7l1.2 2h2.8v9.4H4.5Z"/><circle cx="12" cy="12.8" r="3"/></symbol>
+<symbol id="i-expand" viewBox="0 0 24 24"><path d="M4.6 9V4.6H9M15 4.6h4.4V9M19.4 15v4.4H15M9 19.4H4.6V15"/></symbol>
+<symbol id="i-route" viewBox="0 0 24 24"><circle cx="6.5" cy="17.5" r="2"/><circle cx="17.5" cy="6.5" r="2"/><path d="M8.5 17.5h6a3 3 0 0 0 0-6h-5a3 3 0 0 1 0-6h2"/></symbol>
+</defs></svg>
+
+<!-- HEADER -->
+<header class="head" id="head">
+  <div class="head-in">
+    <a class="brand" href="#top"><svg class="ic mk"><use href="#i-leaf"/></svg><b id="b-name">Frutta e Verdura Enrico</b></a>
+    <span class="status"><span class="dot"></span><span id="status-word">—</span><span class="st-more" id="status-more"></span></span>
+    <a class="tel" id="h-tel" href="tel:+39018252571"><svg class="ic"><use href="#i-phone"/></svg><span id="h-tel-n">0182 52571</span></a>
   </div>
-  <div class="scroll-cue">scorri</div>
 </header>
 
-<!-- INTERLUDIO: CAPITOLO 1 -->
-<section class="interlude">
-  <div class="mini">Capitolo primo · La terra</div>
-  <p>C'è una storia che ad Albenga si ripete ogni mattina. Comincia qui, nella terra scura della piana. Scorri, e guardala crescere.</p>
-</section>
+<div class="wrap" id="top">
 
-<!-- SCENA 1: L'ORTO -->
-<section class="scene" id="s1" data-path="frames/s1/" data-total="50">
-  <canvas></canvas>
-  <img class="poster-img" src="frames/s1/poster.webp" alt="Orto ligure all'alba con germogli" loading="lazy">
-  <div class="caption pos-lb">
-    <h2>Tutto comincia nella terra</h2>
-    <p>Prima del sole, prima di tutto: semi, acqua e mani che sanno quel che fanno.</p>
-  </div>
-  <div class="caption pos-rt">
-    <h2>Ogni germoglio ha i suoi tempi</h2>
-    <p>Qui nessuno ha fretta: nella piana di Albenga le cose buone crescono con calma.</p>
-  </div>
-  <div class="caption pos-lt">
-    <h2>Sole, mare e pazienza</h2>
-    <p>L'aria di Liguria fa metà del lavoro. L'altra metà la fa chi l'orto lo conosce da una vita.</p>
-  </div>
-  <div class="caption pos-cb">
-    <h2>Pronti per il raccolto</h2>
-    <p>Trombette, carciofi violetti, cuore di bue, asparagi: quando sono pronti loro, siamo pronti noi.</p>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="hero rv">
+    <span class="lbl">Piana di Albenga — di stagione</span>
+    <h1>Raccolto ieri.<span class="l2">Al banco stamattina.</span></h1>
+    <p class="sub">Frutta e verdura fresca ogni giorno, dai produttori della piana albenganese.</p>
+    <div class="hero-meta">
+      <span><svg class="ic"><use href="#i-clock"/></svg><span id="hero-hours">Lun–Sab 8–13.30 / 16–19</span></span>
+      <a href="#dove"><svg class="ic"><use href="#i-pin"/></svg>Via Fortino 6, Albenga</a>
+      <a id="hero-tel" href="tel:+39018252571"><svg class="ic"><use href="#i-phone"/></svg>0182 52571</a>
+    </div>
+    <div class="actions">
+      <a class="act" href="#banco"><svg class="ic"><use href="#i-basket"/></svg>Il banco di oggi</a>
+      <a class="act" href="#offerte"><svg class="ic"><use href="#i-tag"/></svg>Offerte di oggi</a>
+      <a class="act" href="#dove"><svg class="ic"><use href="#i-route"/></svg>Come arrivare</a>
+    </div>
+  </section>
 
-<!-- INTERLUDIO: CAPITOLO 2 -->
-<section class="interlude scuro">
-  <div class="mini">Capitolo secondo · Il viaggio</div>
-  <p>Quando l'ultima cassetta è legata sull'Ape, il sole è appena alzato. Si parte: il banco aspetta.</p>
-</section>
-
-<!-- SCENA 2: IL VIAGGIO -->
-<section class="scene" id="s2" data-path="frames/s2/" data-total="50">
-  <canvas></canvas>
-  <img class="poster-img" src="frames/s2/poster.webp" alt="Ape Piaggio carica di cassette tra gli ulivi" loading="lazy">
-  <div class="caption pos-lb">
-    <h2>All'alba si parte</h2>
-    <p>Il motore borbotta, le cassette sono ben strette: il raccolto lascia la campagna.</p>
-  </div>
-  <div class="caption pos-rt">
-    <h2>Pochi chilometri, fatti bene</h2>
-    <p>Niente magazzini, niente attese: solo la strada che scende tra gli ulivi.</p>
-  </div>
-  <div class="caption pos-lt">
-    <h2>Il mare davanti, l'orto alle spalle</h2>
-    <p>Ogni tornante avvicina il banco, e la freschezza non fa in tempo a perdersi.</p>
-  </div>
-  <div class="caption pos-cb">
-    <h2>Albenga in vista</h2>
-    <p>Le case colorate, i campanili, il profumo del mattino: ci siamo quasi.</p>
-  </div>
-</section>
-
-<!-- INTERLUDIO: CAPITOLO 3 -->
-<section class="interlude">
-  <div class="mini">Capitolo terzo · La bottega</div>
-  <p>Via Fortino 6, ore sette e mezza. La tenda si srotola, la vetrina si accende: Albenga ha fame di colore.</p>
-</section>
-
-<!-- SCENA 3: LA BOTTEGA -->
-<section class="scene" id="s3" data-path="frames/s3/" data-total="50">
-  <canvas></canvas>
-  <img class="poster-img" src="frames/s3/poster.webp" alt="La bottega Frutta e Verdura Enrico ad Albenga" loading="lazy">
-  <div class="caption pos-lb">
-    <h2>Eccoci a casa</h2>
-    <p>L'Ape si ferma davanti alla vetrina: è ora di scaricare.</p>
-  </div>
-  <div class="caption pos-rt">
-    <h2>Il banco prende colore</h2>
-    <p>Cassetta dopo cassetta: arance, pomodori, trombette, basilico appena colto.</p>
-  </div>
-  <div class="caption pos-lt">
-    <h2>Scelto a mano, raccontato a voce</h2>
-    <p>Chiedici da dove arriva: te lo diciamo, perché c'eravamo.</p>
-  </div>
-  <div class="caption pos-cb">
-    <h2>Vi aspettiamo da Enrico</h2>
-    <p>Via Fortino 6, Albenga. Il banco più colorato del quartiere — manchi solo tu.</p>
-  </div>
-</section>
-
-<!-- INTERLUDIO: CHIUSURA -->
-<section class="interlude scuro">
-  <div class="mini">Ogni giorno, da una vita</div>
-  <p>Questa storia si ripete ogni mattina, dal lunedì al sabato. L'unico finale che cambia è quello che ti porti a casa.</p>
-</section>
-
-<!-- I 4 DI ALBENGA -->
-<section class="prodotti">
-  <div class="kicker">Le nostre stelle</div>
-  <h2>I 4 di Albenga</h2>
-  <p>Le quattro eccellenze della piana, coltivate a due passi dalla bottega. E poi c'è il basilico: dei 4 non è, ma ad Albenga non manca mai.</p>
-  <div class="grid">
-    <div class="card"><img src="frames/prod-zucchina.webp" alt="Zucchina trombetta di Albenga"><h3>Zucchina trombetta</h3><span>Dolce, soda, inconfondibile</span></div>
-    <div class="card"><img src="frames/prod-carciofo.webp" alt="Carciofo violetto di Albenga"><h3>Carciofo violetto</h3><span>Tenero, anche crudo</span></div>
-    <div class="card"><img src="frames/prod-pomodoro.webp" alt="Pomodoro cuore di bue di Albenga"><h3>Cuore di bue</h3><span>Il re dell'insalata</span></div>
-    <div class="card"><img src="frames/prod-asparago.webp" alt="Asparago violetto di Albenga"><h3>Asparago violetto</h3><span>Raro e prezioso</span></div>
-    <div class="card ospite"><img src="frames/prod-basilico.webp" alt="Basilico ligure"><h3>Basilico</h3><span>Profumo di pesto</span></div>
-  </div>
-</section>
-
-<!-- DOVE TROVARCI -->
-<section class="info" id="dove">
-  <div class="info-wrap">
-    <div>
-      <div class="kicker">Vieni a trovarci</div>
-      <h2>La bottega</h2>
-      <div class="info-block">
-        <h3>📍 Indirizzo</h3>
-        <p>Via Fortino 6, 17031 Albenga (SV)</p>
+  <!-- STORIA -->
+  <section class="storia" id="storia">
+    <div class="storia-head rv">
+      <span class="lbl"><svg class="ic"><use href="#i-sprout"/></svg>Dalla terra al banco</span>
+      <h2>La nostra storia, ogni mattina</h2>
+    </div>
+    <div class="stage" id="stage">
+      <canvas id="story-canvas"></canvas>
+      <div class="stage-grad"></div>
+      <div class="story-load" id="story-load">Carico la storia…</div>
+      <a class="stage-fs" href="storia-immersiva.html"><svg class="ic"><use href="#i-expand"/></svg>A schermo intero</a>
+      <div class="stage-cap">
+        <div class="beat" id="cap-beat">
+          <div class="num" id="cap-num">I — La terra</div>
+          <h3 id="cap-h">Tutto comincia nella piana</h3>
+          <p id="cap-p">Terra scura e generosa, a due passi dal mare. Qui le cose buone crescono con calma.</p>
+        </div>
       </div>
-      <div class="info-block">
-        <h3>🕐 Orari</h3>
-        <!-- TODO: orari da confermare con Enrico -->
-        <ul class="orari-list" id="orari">
-          <li><span>Orari in aggiornamento</span><span>—</span></li>
-          <li><span>Chiamaci per info</span><span>0182 52571</span></li>
-        </ul>
+      <div class="stage-dots"><i class="on"></i><i></i><i></i></div>
+      <div class="stage-prog" id="stage-prog"></div>
+      <div class="nm"><img src="frames/s1/poster.webp" alt="L'orto della piana di Albenga"><div class="stage-cap"><div class="num">I — La terra</div><h3>Tutto comincia nella piana</h3></div></div>
+      <div class="nm"><img src="frames/s2/poster.webp" alt="L'Ape carica scende tra gli ulivi"><div class="stage-cap"><div class="num">II — Il viaggio</div><h3>All'alba si scende a valle</h3></div></div>
+      <div class="nm"><img src="frames/s3/poster.webp" alt="Il banco di Frutta e Verdura Enrico"><div class="stage-cap"><div class="num">III — Il banco</div><h3>Pochi km dopo, è già fresco</h3></div></div>
+    </div>
+    <p class="storia-tie">Raccolto ieri, al banco stamattina.</p>
+  </section>
+
+  <!-- IL BANCO DI OGGI -->
+  <section class="sec" id="banco">
+    <div class="sec-top rv">
+      <div>
+        <span class="lbl">Appena arrivati</span>
+        <h2>Il banco di oggi</h2>
       </div>
-      <div class="info-block">
-        <h3>📞 Telefono</h3>
-        <p><a href="tel:+39018252571" style="color:inherit">0182 52571</a></p>
+      <span class="note" id="fresh-note">aggiornato stamattina</span>
+    </div>
+    <div class="lst" id="lst-fresh"></div>
+  </section>
+
+  <!-- OFFERTE -->
+  <section class="sec" id="offerte">
+    <div class="offerte rv">
+      <span class="lbl"><svg class="ic"><use href="#i-tag"/></svg>Solo oggi</span>
+      <h2>Da prendere <em>entro chiusura</em></h2>
+      <p class="lead">Quantità limitate — chiama per prenotare. Quando finisce, finisce.</p>
+      <div class="cd" id="cd">
+        <span class="k">Chiude tra</span>
+        <span class="t" id="cd-t">—</span>
       </div>
-      <div class="btn-row">
-        <a class="btn btn-arancio" href="https://www.google.com/maps/place/Frutta+E+Verdura+Enrico/@44.0466326,8.2206611,17z" target="_blank" rel="noopener">Indicazioni stradali</a>
-        <a class="btn btn-ghost" href="tel:+39018252571">Chiama ora</a>
-        <a class="btn btn-ghost" href="https://www.facebook.com/p/Frutta-e-verdura-Enrico-100075497484728/" target="_blank" rel="noopener">Facebook</a>
+      <div class="off-list" id="off-list"></div>
+    </div>
+  </section>
+
+  <!-- ENRICO -->
+  <section class="sec">
+    <div class="enrico rv">
+      <div class="enrico-grid">
+        <div>
+          <h2 id="ab-title">Enrico e la sua piana</h2>
+          <div id="ab-body"></div>
+          <p class="claim" id="ab-claim">Non vendiamo frutta e verdura. Vendiamo sapore.</p>
+        </div>
+        <div class="foto-slot" id="foto-slot">
+          <div class="ph"><svg class="ic"><use href="#i-camera"/></svg><span>Aggiungi una foto del banco</span></div>
+        </div>
       </div>
     </div>
-    <div class="mappa">
-      <iframe title="Mappa — Frutta e Verdura Enrico, Via Fortino 6, Albenga" loading="lazy"
-        src="https://www.google.com/maps?q=Frutta%20e%20Verdura%20Enrico%2C%20Via%20Fortino%206%2C%20Albenga&output=embed"></iframe>
+  </section>
+
+  <!-- DOVE -->
+  <section class="dove" id="dove">
+    <div class="dove-grid rv">
+      <div class="dove-card">
+        <h2>Dove siamo</h2>
+        <div class="drow"><svg class="ic"><use href="#i-pin"/></svg><div><div class="k">Indirizzo</div><div class="v" id="d-addr">Via Fortino, 6 — 17031 Albenga (SV)</div></div></div>
+        <div class="drow"><svg class="ic"><use href="#i-phone"/></svg><div><div class="k">Telefono</div><div class="v"><a id="d-tel" href="tel:+39018252571">0182 52571</a></div></div></div>
+        <div class="drow"><svg class="ic"><use href="#i-chat"/></svg><div><div class="k">WhatsApp</div><div class="v"><a id="d-wa" href="#" target="_blank" rel="noopener">Scrivici su WhatsApp</a></div></div></div>
+        <div class="drow"><svg class="ic"><use href="#i-clock"/></svg><div><div class="k">Orari</div><ul class="orari" id="d-orari"></ul></div></div>
+        <div class="dbtns">
+          <a class="btn btn-1" id="d-callbtn" href="tel:+39018252571"><svg class="ic"><use href="#i-phone"/></svg>Chiama</a>
+          <a class="btn btn-2" id="d-wabtn" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-chat"/></svg>WhatsApp</a>
+          <a class="btn btn-2" href="https://www.google.com/maps/place/Frutta+E+Verdura+Enrico/@44.0466326,8.2206611,17z" target="_blank" rel="noopener"><svg class="ic"><use href="#i-route"/></svg>Indicazioni</a>
+        </div>
+      </div>
+      <div class="mappa">
+        <iframe title="Mappa — Frutta e Verdura Enrico, Via Fortino 6, Albenga" loading="lazy"
+          src="https://www.google.com/maps?q=Frutta%20e%20Verdura%20Enrico%2C%20Via%20Fortino%206%2C%20Albenga&output=embed"></iframe>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+</div>
 
 <footer>
-  © 2026 Frutta e Verdura Enrico · Via Fortino 6, Albenga (SV) · <a href="tel:+39018252571">0182 52571</a>
+  <svg class="ic fmk"><use href="#i-leaf"/></svg>
+  <div class="fname" id="f-name">Frutta e Verdura Enrico</div>
+  <div class="fmeta"><span id="f-meta">Via Fortino 6 · 17031 Albenga (SV)</span> · <a id="f-tel" href="tel:+39018252571">0182 52571</a></div>
 </footer>
 
+<div class="cta">
+  <a class="c1" id="cta-call" href="tel:+39018252571"><svg class="ic"><use href="#i-phone"/></svg>Chiama</a>
+  <a class="c2" id="cta-wa" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-chat"/></svg>WhatsApp</a>
+</div>
+
+<!-- ADMIN -->
+<button class="fab" id="fab" title="Pannello di Enrico" aria-label="Pannello di Enrico"><svg class="ic"><use href="#i-key"/></svg></button>
+<div class="adm-back" id="adm-back"></div>
+<aside class="adm" id="adm" aria-hidden="true">
+  <div class="adm-top">
+    <div class="t"><svg class="ic"><use href="#i-leaf"/></svg>Pannello di Enrico</div>
+    <button class="adm-logout" id="adm-logout">Esci</button>
+    <button class="adm-x" id="adm-close" aria-label="Chiudi"><svg class="ic"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="adm-auth" id="adm-auth">
+    <p class="auth-intro">Accedi con l'account di Enrico per modificare il banco e <b>pubblicare le modifiche a tutti</b>.</p>
+    <div class="fld"><span class="l">Email</span><input id="auth-email" type="email" autocomplete="username" placeholder="enrico@esempio.it"></div>
+    <div class="fld"><span class="l">Password</span><input id="auth-pass" type="password" autocomplete="current-password" placeholder="••••••••"></div>
+    <div class="auth-err" id="auth-err"></div>
+    <button class="save authgo" id="auth-go">Accedi</button>
+  </div>
+  <div class="adm-editor" id="adm-editor">
+  <div class="adm-mode" id="adm-mode"></div>
+  <div class="adm-tabs">
+    <button class="adm-tab on" data-pane="banco">Il banco</button>
+    <button class="adm-tab" data-pane="offerte">Offerte</button>
+    <button class="adm-tab" data-pane="bottega">Bottega</button>
+  </div>
+  <div class="adm-body">
+    <div class="adm-pane on" id="pane-banco">
+      <div class="hint">Quello che è <b>appena arrivato</b> sul banco. Metti i prezzi di oggi, togli ciò che è finito. Salva e il sito si aggiorna.</div>
+      <div id="ed-fresh"></div>
+      <button class="addbtn" id="add-fresh"><svg class="ic"><use href="#i-plus"/></svg>Aggiungi prodotto</button>
+    </div>
+    <div class="adm-pane" id="pane-offerte">
+      <div class="hint">Le offerte <b>da prendere entro chiusura</b>: cesti, sottocosto, ultime cassette.</div>
+      <div id="ed-off"></div>
+      <button class="addbtn" id="add-off"><svg class="ic"><use href="#i-plus"/></svg>Aggiungi offerta</button>
+    </div>
+    <div class="adm-pane" id="pane-bottega">
+      <div class="fld"><span class="l">Stato di adesso</span>
+        <div class="seg" id="seg-status"><button data-v="auto" class="on">Automatico</button><button data-v="open">Aperto</button><button data-v="closed">Chiuso</button></div>
+      </div>
+      <div class="fld"><span class="l">Nome bottega</span><input id="i-name"></div>
+      <div class="fld"><span class="l">Indirizzo</span><input id="i-addr"></div>
+      <div class="row2"><div class="fld"><span class="l">Telefono</span><input id="i-tel"></div><div class="fld"><span class="l">WhatsApp</span><input id="i-wa" placeholder="es. 3331234567"></div></div>
+      <div class="fld"><span class="l">Orari della settimana</span><div id="ed-hours"></div></div>
+      <div class="fld"><span class="l">Testo «Enrico e la sua piana»</span><textarea id="i-about"></textarea></div>
+      <div class="fld"><span class="l">Frase in evidenza</span><input id="i-claim"></div>
+    </div>
+  </div>
+  <div class="adm-foot">
+    <button class="reset" id="adm-reset">Ripristina</button>
+    <button class="save" id="adm-save">Salva</button>
+  </div>
+  </div>
+</aside>
+
+<div class="toast" id="toast"></div>
+<input type="file" id="photo-input" accept="image/*" hidden>
+
+<!-- Firebase (compat) — sincronizza il banco fra tutti i dispositivi -->
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.5/firebase-auth-compat.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script>
 (function(){
-  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const hasGsap = typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined';
-  if (reduced || !hasGsap) { document.body.classList.add('no-motion'); return; }
+'use strict';
+
+/* ======================================================================
+   FIREBASE — incolla qui la configurazione del tuo progetto.
+   Finché apiKey resta "INCOLLA-QUI" il sito funziona in locale (solo questo
+   dispositivo). Appena incolli le chiavi vere, il banco diventa pubblico.
+   Come ottenerle: console.firebase.google.com → progetto → Impostazioni
+   progetto → "Le tue app" → App web → copia l'oggetto firebaseConfig.
+   IMPORTANTE: includi anche databaseURL (Realtime Database).
+   ====================================================================== */
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyBV7IQrUsON-ZKiyYZc_d9BMRcx-nWh4Gc",
+  authDomain: "frutta-verdura-enrico.firebaseapp.com",
+  // ⚠️ databaseURL: crea il Realtime Database (regione europe-west1) e, se la console
+  // mostra un URL diverso da questo, sostituiscilo con quello esatto del tuo database.
+  databaseURL: "https://frutta-verdura-enrico-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "frutta-verdura-enrico",
+  storageBucket: "frutta-verdura-enrico.firebasestorage.app",
+  messagingSenderId: "571848876481",
+  appId: "1:571848876481:web:738072bb228a74a0318f40",
+  measurementId: "G-71YXW9K3LN"
+};
+const FB_ENABLED = FIREBASE_CONFIG.apiKey !== "INCOLLA-QUI";
+let fbDb=null, fbAuth=null, isAdmin=false;
+
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const GIORNI=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'];
+
+const DEFAULTS={
+  name:'Frutta e Verdura Enrico',
+  addr:'Via Fortino, 6 — 17031 Albenga (SV)',
+  tel:'0182 52571', telRaw:'+39018252571', wa:'39018252571',
+  statusMode:'auto',
+  about:'Da anni portiamo ogni mattina sul banco il meglio della Piana di Albenga, una delle zone agricole più fertili della Liguria.\n\nConosciamo ogni produttore. Sappiamo quando arriva la prima ciliegia di Villanova, quando matura il basilico di Albenga, quando sono pronti i fagioli di Pigna.',
+  claim:'Non vendiamo frutta e verdura. Vendiamo sapore.',
+  photo:null,
+  hours:{0:{open:false,m:['',''],p:['','']},
+    1:{open:true,m:['08:00','13:30'],p:['16:00','19:00']},2:{open:true,m:['08:00','13:30'],p:['16:00','19:00']},
+    3:{open:true,m:['08:00','13:30'],p:['16:00','19:00']},4:{open:true,m:['08:00','13:30'],p:['16:00','19:00']},
+    5:{open:true,m:['08:00','13:30'],p:['16:00','19:00']},6:{open:true,m:['08:00','13:30'],p:['16:00','19:00']}},
+  fresh:[
+    {name:'Pesche di Volta',desc:'Dolcissime, appena arrivate',price:2.80,unit:'kg',isNew:true,photo:null},
+    {name:'Pomodori cuore di bue',desc:'Coltivati in piana, polpa soda',price:3.20,unit:'kg',isNew:false,photo:null},
+    {name:'Trombette di Albenga',desc:'Tipiche locali, tenere e saporite',price:2.50,unit:'kg',isNew:true,photo:null},
+    {name:'Limoni di Mentone',desc:'Profumati, a buccia grossa',price:1.80,unit:'kg',isNew:false,photo:null},
+    {name:'Insalata da taglio',desc:'Raccolta stamattina',price:1.20,unit:'mazzo',isNew:true,photo:null},
+    {name:'Fragole',desc:'Ultime della stagione',price:4.00,unit:'kg',isNew:false,photo:null}
+  ],
+  offers:[
+    {name:'3 kg di Pesche di Volta',desc:'Risparmi sul prezzo al chilo',price:7.50,photo:null},
+    {name:'Cesto misto di ortaggi',desc:'Pomodori, trombette e zucchine',price:5.00,photo:null}
+  ]
+};
+
+const KEY='fve-enrico-v1';
+const clone=o=>JSON.parse(JSON.stringify(o));
+function load(){try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&typeof s==='object')return Object.assign(clone(DEFAULTS),s);}catch(e){}return clone(DEFAULTS);}
+function persistLocal(){try{localStorage.setItem(KEY,JSON.stringify(D));}catch(e){toast('Memoria quasi piena: foto troppo grandi');}}
+function saveData(onOk){
+  persistLocal();
+  if(!FB_ENABLED){if(onOk)onOk();toast('Salvato su questo dispositivo');return;}
+  if(!isAdmin){toast('Accedi per pubblicare');return;}
+  if(!fbDb){toast('Connessione non pronta');return;}
+  fbDb.ref('site').set({json:JSON.stringify(D),updatedAt:Date.now()})
+    .then(()=>{if(onOk)onOk();toast('Pubblicato — ora lo vedono tutti');})
+    .catch(e=>toast('Errore: '+(e.code||e.message)));
+}
+let D=load();
+
+const eur=n=>Number(n).toLocaleString('it-IT',{minimumFractionDigits:2,maximumFractionDigits:2});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const toMin=t=>(!t||t.indexOf(':')<0)?null:(()=>{const[a,b]=t.split(':').map(Number);return a*60+b;})();
+const fmtMin=m=>String(Math.floor(m/60)).padStart(2,'0')+'.'+String(m%60).padStart(2,'0');
+const shortAddr=f=>f.replace(',','').replace(/—\s*\d{5}\s*/,'· ').trim();
+const footerAddr=f=>f.replace(',','').replace('—','·');
+
+function dayRanges(d){const h=D.hours[d];if(!h||!h.open)return[];const r=[];
+  const a=toMin(h.m[0]),b=toMin(h.m[1]);if(a!=null&&b!=null&&b>a)r.push([a,b]);
+  const c=toMin(h.p[0]),e=toMin(h.p[1]);if(c!=null&&e!=null&&e>c)r.push([c,e]);return r;}
+function dayLabel(d){const r=dayRanges(d);return r.length?r.map(x=>fmtMin(x[0])+'–'+fmtMin(x[1])).join(' / '):'chiuso';}
+function computeStatus(){
+  const now=new Date(),day=now.getDay(),cur=now.getHours()*60+now.getMinutes();
+  if(D.statusMode==='open')return{open:true,msg:'Aperto ora',closeMin:closingToday(day,cur)};
+  if(D.statusMode==='closed')return{open:false,msg:nextOpen(day,cur)};
+  for(const[a,b]of dayRanges(day))if(cur>=a&&cur<b)return{open:true,msg:'Aperto — chiude alle '+fmtMin(b),closeMin:b};
+  return{open:false,msg:nextOpen(day,cur)};
+}
+function closingToday(day,cur){for(const[,b]of dayRanges(day))if(cur<b)return b;return null;}
+function nextOpen(day,cur){
+  for(const[a]of dayRanges(day))if(cur<a)return'Chiuso — riapre alle '+fmtMin(a);
+  for(let i=1;i<=7;i++){const d=(day+i)%7,r=dayRanges(d);if(r.length)return'Chiuso — riapre '+(i===1?'domani':GIORNI[d].toLowerCase())+' alle '+fmtMin(r[0][0]);}
+  return'Chiuso';
+}
+function heroHours(){const l=[];for(let d=1;d<=6;d++)l.push(dayLabel(d));
+  return(l.every(x=>x===l[0])&&l[0]!=='chiuso')?'Lun–Sab '+l[0]:'Lun–Sab — vedi orari';}
+
+function render(){
+  $('#b-name').textContent=D.name;$('#f-name').textContent=D.name;
+  $('#hero-hours').textContent=heroHours();
+  $('#d-addr').textContent=D.addr;$('#f-meta').textContent=footerAddr(D.addr);
+  ['#hero-tel','#d-tel','#h-tel-n','#f-tel'].forEach(s=>{const e=$(s);if(e)e.textContent=D.tel;});
+  ['#hero-tel','#d-tel','#d-callbtn','#cta-call','#f-tel','#h-tel'].forEach(s=>{const e=$(s);if(e)e.href='tel:'+D.telRaw;});
+  const wa='https://wa.me/'+D.wa.replace(/\D/g,'')+'?text='+encodeURIComponent('Ciao Enrico! Vorrei prenotare…');
+  ['#d-wa','#d-wabtn','#cta-wa'].forEach(s=>{const e=$(s);if(e)e.href=wa;});
+  $('#ab-body').innerHTML=D.about.split(/\n\n+/).map(p=>'<p>'+esc(p)+'</p>').join('');
+  $('#ab-claim').textContent=D.claim;
+  const fs=$('#foto-slot');
+  fs.innerHTML=(typeof D.photo==='string'&&D.photo.indexOf('data:')===0)
+    ?'<img src="'+D.photo+'" alt="Il banco di Frutta e Verdura Enrico">'
+    :'<div class="ph"><svg class="ic"><use href="#i-camera"/></svg><span>Aggiungi una foto del banco</span></div>';
+  // listino freschi
+  $('#lst-fresh').innerHTML=D.fresh.map(p=>{
+    const thumb=(p.photo&&p.photo.indexOf('data:')===0)?'<img class="lst-thumb" src="'+p.photo+'" alt="">':'';
+    return '<div class="lst-item">'+thumb+
+      '<div class="lst-main"><div class="lst-name">'+esc(p.name)+(p.isNew?'<span class="lst-new">nuovo</span>':'')+'</div>'+
+      (p.desc?'<div class="lst-desc">'+esc(p.desc)+'</div>':'')+'</div>'+
+      '<div class="lst-lead"></div>'+
+      '<div class="lst-price">'+eur(p.price)+'<span class="u">€/'+esc(p.unit||'')+'</span></div></div>';
+  }).join('');
+  // offerte
+  $('#off-list').innerHTML=D.offers.map(o=>{
+    const thumb=(o.photo&&o.photo.indexOf('data:')===0)?'<img class="off-thumb" src="'+o.photo+'" alt="">':'';
+    return '<div class="off-item">'+thumb+'<div class="off-main"><h3>'+esc(o.name)+'</h3>'+
+      (o.desc?'<p>'+esc(o.desc)+'</p>':'')+'</div><div class="off-price">'+eur(o.price)+' €</div></div>';
+  }).join('');
+  // orari
+  const td=new Date().getDay();
+  $('#d-orari').innerHTML=[1,2,3,4,5,6,0].map(d=>{const lab=dayLabel(d),closed=lab==='chiuso';
+    return '<li class="'+(d===td?'oggi ':'')+(closed?'chiuso':'')+'"><span class="g">'+GIORNI[d]+'</span><span class="h">'+lab+'</span></li>';}).join('');
+  renderStatus();
+}
+function renderStatus(){const st=computeStatus(),p=st.msg.split(' — ');
+  $('#status-word').textContent=p[0];$('#status-more').textContent=p[1]?'— '+p[1]:'';
+  $('#head').classList.toggle('is-open',st.open);$('#head').classList.toggle('is-closed',!st.open);
+  document.body.classList.toggle('is-closed',!st.open);}
+
+function tickCd(){const st=computeStatus(),t=$('#cd-t'),k=$('.cd .k');
+  if(st.open&&st.closeMin!=null){const now=new Date();let left=st.closeMin*60-(now.getHours()*3600+now.getMinutes()*60+now.getSeconds());if(left<0)left=0;
+    const h=Math.floor(left/3600),m=Math.floor(left%3600/60),s=left%60;
+    t.textContent=(h>0?h+':':'')+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+    t.classList.remove('closed');k.textContent='Chiude tra';}
+  else{t.textContent=st.msg.replace('Chiuso — ','');t.classList.add('closed');k.textContent='Adesso';}
+}
+
+/* ---- STORIA scrub ---- */
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const hasGsap=typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined';
+const SCENES=[
+  {path:'frames/s1/',total:50,num:'I — La terra',h:'Tutto comincia nella piana',p:'Terra scura e generosa, a due passi dal mare. Qui le cose buone crescono con calma.'},
+  {path:'frames/s2/',total:50,num:'II — Il viaggio',h:"All'alba si scende a valle",p:"Quando l'ultima cassetta è legata sull'Ape, si parte: tra gli ulivi, verso il paese."},
+  {path:'frames/s3/',total:50,num:'III — Il banco',h:'Pochi km dopo, è già fresco',p:'Niente magazzini, niente attese: il raccolto è subito sul banco, in Via Fortino 6.'}
+];
+function initStory(){
+  if(reduced||!hasGsap){document.body.classList.remove('motion');document.body.classList.add('no-motion');return;}
   gsap.registerPlugin(ScrollTrigger);
+  const stage=$('#stage'),canvas=$('#story-canvas'),ctx=canvas.getContext('2d');
+  const isMobile=matchMedia('(max-width:768px)').matches;
+  const STEP=isMobile?2:1, DPR=Math.min(window.devicePixelRatio||1,1.75);
+  class Seq{constructor(c){this.path=c.path;this.idx=[];for(let i=1;i<=c.total;i+=STEP)this.idx.push(i);
+    this.imgs=new Array(this.idx.length).fill(null);this.loaded=0;this.started=false;this.onp=null;}
+    load(){if(this.started)return;this.started=true;let inflight=0,next=0;const go=()=>{
+      while(inflight<6&&next<this.idx.length){const slot=next++;inflight++;const im=new Image();im.decoding='async';
+        im.onload=im.onerror=()=>{inflight--;this.imgs[slot]=im.naturalWidth?im:null;this.loaded++;if(this.onp)this.onp(this.loaded/this.idx.length);go();};
+        im.src=this.path+'f_'+String(this.idx[slot]).padStart(3,'0')+'.webp';}};go();}
+    frameAt(t){return Math.min(this.idx.length-1,Math.round(t*(this.idx.length-1)));}
+    get(slot){let j=slot,im=null;while(j>=0&&!(im=this.imgs[j]))j--;if(!im){j=slot;while(j<this.imgs.length&&!(im=this.imgs[j]))j++;}return im;}}
+  const seqs=SCENES.map(c=>new Seq(c));
+  let cw=0,ch=0,lastKey=-1,lastP=0,curScene=-1;
+  const dots=$$('.stage-dots i');
+  function resize(){const r=stage.getBoundingClientRect();cw=canvas.width=Math.round(r.width*DPR);ch=canvas.height=Math.round(r.height*DPR);draw(lastP,true);}
+  function paint(im){const iw=im.naturalWidth,ih=im.naturalHeight,s=Math.max(cw/iw,ch/ih),dw=iw*s,dh=ih*s;ctx.drawImage(im,(cw-dw)/2,(ch-dh)/2,dw,dh);}
+  function draw(p,force){p=Math.max(0,Math.min(.9999,p));lastP=p;const si=Math.min(2,Math.floor(p*3)),local=p*3-si;
+    const seq=seqs[si],fr=seq.frameAt(local),key=si*1000+fr;if(!force&&key===lastKey)return;lastKey=key;
+    const im=seq.get(fr);if(im)paint(im);
+    $('#stage-prog').style.width=(p*100).toFixed(1)+'%';dots.forEach((d,i)=>d.classList.toggle('on',i===si));
+    if(si!==curScene){curScene=si;const c=SCENES[si],beat=$('#cap-beat');beat.style.opacity=0;beat.style.transform='translateY(10px)';
+      setTimeout(()=>{$('#cap-num').textContent=c.num;$('#cap-h').textContent=c.h;$('#cap-p').textContent=c.p;beat.style.opacity=1;beat.style.transform='none';},170);}}
+  seqs[0].onp=p=>{if(p>=1){const l=$('#story-load');if(l){l.style.opacity=0;setTimeout(()=>l.remove(),500);}}};
+  seqs[0].load();setTimeout(()=>seqs[1].load(),1200);setTimeout(()=>seqs[2].load(),2600);
+  resize();
+  const state={p:0};
+  gsap.to(state,{p:1,ease:'none',onUpdate:()=>draw(state.p),scrollTrigger:{trigger:'.storia',start:'top top',end:'bottom bottom',scrub:.5}});
+  let rT;addEventListener('resize',()=>{clearTimeout(rT);rT=setTimeout(()=>{resize();ScrollTrigger.refresh();},200);});
+  const warm=setInterval(()=>{if(seqs[0].loaded>0){draw(state.p||0,true);clearInterval(warm);}},120);
+}
 
-  const isMobile = matchMedia('(max-width:768px)').matches;
-  const saveData = navigator.connection && navigator.connection.saveData;
-  const STEP = (isMobile || saveData) ? 2 : 1;   // su mobile carica 1 frame su 2
-  const DPR = Math.min(window.devicePixelRatio || 1, 1.75);
+function initReveal(){if(!('IntersectionObserver'in window)){$$('.rv').forEach(e=>e.classList.add('in'));return;}
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+  $$('.rv').forEach(e=>io.observe(e));}
+function initScroll(){let t=false;addEventListener('scroll',()=>{if(t)return;t=true;requestAnimationFrame(()=>{document.body.classList.toggle('scrolled',scrollY>60);t=false;});},{passive:true});}
+function initAnchors(){$$('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id.length<2)return;const t=$(id);if(!t)return;e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}));}
 
-  class Scene {
-    constructor(el){
-      this.el = el;
-      this.canvas = el.querySelector('canvas');
-      this.ctx = this.canvas.getContext('2d');
-      this.path = el.dataset.path;
-      this.total = +el.dataset.total;
-      this.indices = [];
-      for (let i = 1; i <= this.total; i += STEP) this.indices.push(i);
-      this.images = new Array(this.indices.length).fill(null);
-      this.loadedCount = 0;
-      this.current = 0;
-      this.started = false;
-      this.onProgress = null;
-      this.resize();
-    }
-    resize(){
-      const w = this.el.clientWidth, h = this.el.clientHeight;
-      this.canvas.width = Math.round(w * DPR);
-      this.canvas.height = Math.round(h * DPR);
-      this.draw(this.current, true);
-    }
-    load(){
-      if (this.started) return; this.started = true;
-      let inFlight = 0, next = 0;
-      const launch = () => {
-        while (inFlight < 6 && next < this.indices.length) {
-          const slot = next++;
-          inFlight++;
-          const img = new Image();
-          img.decoding = 'async';
-          img.onload = img.onerror = () => {
-            inFlight--;
-            this.images[slot] = img.complete && img.naturalWidth ? img : null;
-            this.loadedCount++;
-            if (this.onProgress) this.onProgress(this.loadedCount / this.indices.length);
-            if (slot === 0 || Math.abs(slot - this.current) < 3) this.draw(this.current, true);
-            launch();
-          };
-          img.src = this.path + 'f_' + String(this.indices[slot]).padStart(3,'0') + '.webp';
-        }
-      };
-      launch();
-    }
-    frameFor(progress){
-      return Math.min(this.indices.length - 1, Math.round(progress * (this.indices.length - 1)));
-    }
-    draw(slot, force){
-      if (!force && slot === this.lastDrawn) return;
-      // usa il frame caricato più vicino (preferibilmente <= slot)
-      let img = null, j = slot;
-      while (j >= 0 && !(img = this.images[j])) j--;
-      if (!img) { j = slot; while (j < this.images.length && !(img = this.images[j])) j++; }
-      if (!img) return;
-      this.lastDrawn = slot; this.current = slot;
-      const cw = this.canvas.width, ch = this.canvas.height;
-      const iw = img.naturalWidth, ih = img.naturalHeight;
-      const s = Math.max(cw/iw, ch/ih);
-      const dw = iw*s, dh = ih*s;
-      this.ctx.drawImage(img, (cw-dw)/2, (ch-dh)/2, dw, dh);
-    }
-  }
+/* ---- ADMIN ---- */
+let DRAFT=null,photoTarget=null;
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),1900);}
+const IC={trash:'i-trash',plus:'i-plus',cam:'i-camera'};
+const icn=n=>'<svg class="ic"><use href="#'+n+'"/></svg>';
+function openAdm(){DRAFT=clone(D);buildAdm();updateAdminAuthUI();$('#adm').classList.add('open');$('#adm-back').classList.add('open');$('#adm').setAttribute('aria-hidden','false');}
+function closeAdm(){$('#adm').classList.remove('open');$('#adm-back').classList.remove('open');$('#adm').setAttribute('aria-hidden','true');}
+function buildAdm(){$('#i-name').value=DRAFT.name;$('#i-addr').value=DRAFT.addr;$('#i-tel').value=DRAFT.tel;$('#i-wa').value=DRAFT.wa;
+  $('#i-about').value=DRAFT.about;$('#i-claim').value=DRAFT.claim;
+  $$('#seg-status button').forEach(b=>b.classList.toggle('on',b.dataset.v===DRAFT.statusMode));
+  buildFresh();buildOff();buildHours();}
+function photoBtn(kind,i,has){return '<button class="linkbtn" data-photo="'+kind+'" data-i="'+i+'">'+icn(IC.cam)+(has?'Cambia foto':'Aggiungi foto (facoltativa)')+'</button>';}
+function buildFresh(){$('#ed-fresh').innerHTML=DRAFT.fresh.map((p,i)=>'<div class="erow" data-i="'+i+'"><button class="del" data-del="fresh" data-i="'+i+'">'+icn(IC.trash)+'</button>'+
+  '<span class="l">Prodotto</span><input data-f="name" value="'+esc(p.name||'')+'" placeholder="Nome del prodotto">'+
+  '<input data-f="desc" value="'+esc(p.desc||'')+'" placeholder="Descrizione breve">'+
+  '<div class="row2"><input data-f="price" type="number" step="0.10" inputmode="decimal" value="'+p.price+'" placeholder="Prezzo"><input data-f="unit" value="'+esc(p.unit||'')+'" placeholder="kg · mazzo · cad."></div>'+
+  '<label class="chk"><input type="checkbox" data-f="isNew" '+(p.isNew?'checked':'')+'> Segna come «nuovo»</label>'+
+  photoBtn('fresh',i,p.photo)+'</div>').join('');}
+function buildOff(){$('#ed-off').innerHTML=DRAFT.offers.map((o,i)=>'<div class="erow" data-i="'+i+'"><button class="del" data-del="off" data-i="'+i+'">'+icn(IC.trash)+'</button>'+
+  '<span class="l">Offerta</span><input data-f="name" value="'+esc(o.name||'')+'" placeholder="Nome dell\'offerta">'+
+  '<input data-f="desc" value="'+esc(o.desc||'')+'" placeholder="Descrizione">'+
+  '<input data-f="price" type="number" step="0.10" inputmode="decimal" value="'+o.price+'" placeholder="Prezzo">'+
+  photoBtn('off',i,o.photo)+'</div>').join('');}
+function buildHours(){$('#ed-hours').innerHTML=[1,2,3,4,5,6,0].map(d=>{const h=DRAFT.hours[d];
+  return '<div class="day '+(h.open?'':'closed')+'" data-day="'+d+'"><div class="dh"><b>'+GIORNI[d]+'</b><label class="sw"><input type="checkbox" data-open="'+d+'" '+(h.open?'checked':'')+'><span class="s"></span></label></div>'+
+    '<div class="tt"><input data-h="'+d+'-m0" value="'+h.m[0]+'" placeholder="08:00"><input data-h="'+d+'-m1" value="'+h.m[1]+'" placeholder="13:30"><input data-h="'+d+'-p0" value="'+h.p[0]+'" placeholder="16:00"><input data-h="'+d+'-p1" value="'+h.p[1]+'" placeholder="19:00"></div></div>';}).join('');}
+function readAdm(){
+  DRAFT.name=$('#i-name').value.trim()||DEFAULTS.name;DRAFT.addr=$('#i-addr').value.trim()||DEFAULTS.addr;
+  DRAFT.tel=$('#i-tel').value.trim();DRAFT.telRaw='+39'+DRAFT.tel.replace(/\D/g,'');DRAFT.wa=$('#i-wa').value.replace(/\D/g,'')||DEFAULTS.wa;
+  DRAFT.about=$('#i-about').value.trim();DRAFT.claim=$('#i-claim').value.trim();
+  const sm=$('#seg-status button.on');DRAFT.statusMode=sm?sm.dataset.v:'auto';
+  DRAFT.fresh=$$('#ed-fresh .erow').map((r,i)=>({name:$('[data-f=name]',r).value.trim(),desc:$('[data-f=desc]',r).value.trim(),
+    price:parseFloat($('[data-f=price]',r).value)||0,unit:$('[data-f=unit]',r).value.trim()||'kg',isNew:$('[data-f=isNew]',r).checked,
+    photo:DRAFT.fresh[i]?DRAFT.fresh[i].photo:null})).filter(p=>p.name);
+  DRAFT.offers=$$('#ed-off .erow').map((r,i)=>({name:$('[data-f=name]',r).value.trim(),desc:$('[data-f=desc]',r).value.trim(),
+    price:parseFloat($('[data-f=price]',r).value)||0,photo:DRAFT.offers[i]?DRAFT.offers[i].photo:null})).filter(o=>o.name);
+  [1,2,3,4,5,6,0].forEach(d=>{DRAFT.hours[d]={open:$('[data-open="'+d+'"]').checked,
+    m:[$('[data-h="'+d+'-m0"]').value.trim(),$('[data-h="'+d+'-m1"]').value.trim()],
+    p:[$('[data-h="'+d+'-p0"]').value.trim(),$('[data-h="'+d+'-p1"]').value.trim()]};});
+}
+function initAdmin(){
+  $('#fab').addEventListener('click',openAdm);$('#adm-close').addEventListener('click',closeAdm);$('#adm-back').addEventListener('click',closeAdm);
+  $$('.adm-tab').forEach(t=>t.addEventListener('click',()=>{$$('.adm-tab').forEach(x=>x.classList.remove('on'));t.classList.add('on');
+    $$('.adm-pane').forEach(p=>p.classList.remove('on'));$('#pane-'+t.dataset.pane).classList.add('on');}));
+  $('#seg-status').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;$$('#seg-status button').forEach(x=>x.classList.remove('on'));b.classList.add('on');});
+  $('#add-fresh').addEventListener('click',()=>{readAdm();DRAFT.fresh.push({name:'',desc:'',price:0,unit:'kg',isNew:true,photo:null});buildFresh();});
+  $('#add-off').addEventListener('click',()=>{readAdm();DRAFT.offers.push({name:'',desc:'',price:0,photo:null});buildOff();});
+  $('#ed-fresh').addEventListener('click',e=>{const d=e.target.closest('[data-del]');if(d){readAdm();DRAFT.fresh.splice(+d.dataset.i,1);buildFresh();return;}
+    const ph=e.target.closest('[data-photo]');if(ph){photoTarget={type:'fresh',i:+ph.dataset.i};$('#photo-input').click();}});
+  $('#ed-off').addEventListener('click',e=>{const d=e.target.closest('[data-del]');if(d){readAdm();DRAFT.offers.splice(+d.dataset.i,1);buildOff();return;}
+    const ph=e.target.closest('[data-photo]');if(ph){photoTarget={type:'off',i:+ph.dataset.i};$('#photo-input').click();}});
+  $('#ed-hours').addEventListener('change',e=>{const o=e.target.closest('[data-open]');if(o)o.closest('.day').classList.toggle('closed',!o.checked);});
+  $('#foto-slot').addEventListener('click',()=>{if(FB_ENABLED&&!isAdmin){openAdm();return;}photoTarget={type:'banco'};$('#photo-input').click();});
+  $('#photo-input').addEventListener('change',e=>{const f=e.target.files[0];if(!f)return;
+    if(f.size>6*1024*1024){toast('Foto troppo pesante');e.target.value='';return;}
+    downscale(f,1100,url=>{
+      if(!photoTarget){}
+      else if(photoTarget.type==='banco'){D.photo=url;render();saveData();}
+      else if(DRAFT){readAdm();(photoTarget.type==='fresh'?DRAFT.fresh:DRAFT.offers)[photoTarget.i].photo=url;
+        photoTarget.type==='fresh'?buildFresh():buildOff();toast('Foto pronta — Salva per confermare');}
+      e.target.value='';});});
+  $('#adm-save').addEventListener('click',()=>{readAdm();D=clone(DRAFT);render();tickCd();saveData(()=>closeAdm());});
+  $('#adm-reset').addEventListener('click',()=>{if(confirm('Ripristinare i dati di esempio? Perderai le modifiche salvate.')){localStorage.removeItem(KEY);D=clone(DEFAULTS);render();tickCd();buildAdm();saveData();}});
+  addEventListener('keydown',e=>{if(e.key==='Escape')closeAdm();});
+}
+function downscale(file,maxW,cb){const img=new Image(),url=URL.createObjectURL(file);
+  img.onload=()=>{const s=Math.min(1,maxW/img.width),c=document.createElement('canvas');c.width=Math.round(img.width*s);c.height=Math.round(img.height*s);
+    c.getContext('2d').drawImage(img,0,0,c.width,c.height);URL.revokeObjectURL(url);cb(c.toDataURL('image/jpeg',.82));};
+  img.onerror=()=>{URL.revokeObjectURL(url);toast('Immagine non valida');};img.src=url;}
 
-  const scenes = [...document.querySelectorAll('.scene')].map(el => new Scene(el));
+/* ---- FIREBASE: sync pubblica + login di Enrico ---- */
+function authMsg(c){return({'auth/invalid-email':'Email non valida','auth/missing-password':'Inserisci la password','auth/invalid-credential':'Email o password errati','auth/wrong-password':'Password errata','auth/user-not-found':'Account non trovato','auth/too-many-requests':'Troppi tentativi, riprova tra poco','auth/network-request-failed':'Connessione assente'}[c])||'Accesso non riuscito';}
+function updateAdminAuthUI(){const login=FB_ENABLED&&!isAdmin;
+  $('#adm-auth').style.display=login?'block':'none';
+  $('#adm-editor').style.display=login?'none':'flex';
+  $('#adm-logout').style.display=(FB_ENABLED&&isAdmin)?'inline-block':'none';
+  const m=$('#adm-mode');
+  if(!FB_ENABLED){m.textContent='Modifiche solo su questo dispositivo';m.classList.remove('live');}
+  else if(isAdmin){m.textContent='Connesso · le modifiche vanno online a tutti';m.classList.add('live');}
+  else{m.textContent='';m.classList.remove('live');}}
+function initFirebase(){
+  if(!FB_ENABLED||!window.firebase){updateAdminAuthUI();return;}
+  try{
+    firebase.initializeApp(FIREBASE_CONFIG);
+    fbDb=firebase.database();fbAuth=firebase.auth();
+    fbAuth.setPersistence(firebase.auth.Auth.Persistence.LOCAL).catch(()=>{});
+    fbDb.ref('site').on('value',snap=>{const v=snap.val();
+      if(v&&v.json){try{D=Object.assign(clone(DEFAULTS),JSON.parse(v.json));persistLocal();render();tickCd();}catch(e){}}},
+      ()=>{});
+    fbAuth.onAuthStateChanged(u=>{isAdmin=!!u;updateAdminAuthUI();});
+  }catch(e){updateAdminAuthUI();}
+}
+function doLogin(){if(!fbAuth)return;const em=$('#auth-email').value.trim(),pw=$('#auth-pass').value;
+  $('#auth-err').textContent='';if(!em||!pw){$('#auth-err').textContent='Inserisci email e password';return;}
+  $('#auth-go').textContent='Accesso…';
+  fbAuth.signInWithEmailAndPassword(em,pw)
+    .then(()=>{$('#auth-go').textContent='Accedi';$('#auth-pass').value='';toast('Bentornato, Enrico');})
+    .catch(e=>{$('#auth-go').textContent='Accedi';$('#auth-err').textContent=authMsg(e.code);});}
+function initAuthUI(){updateAdminAuthUI();
+  const go=$('#auth-go');if(go)go.addEventListener('click',doLogin);
+  const pw=$('#auth-pass');if(pw)pw.addEventListener('keydown',e=>{if(e.key==='Enter')doLogin();});
+  const lo=$('#adm-logout');if(lo)lo.addEventListener('click',()=>{if(fbAuth)fbAuth.signOut();});}
 
-  // barra di caricamento della scena 1 nell'hero
-  const loadbar = document.getElementById('loadbar');
-  scenes[0].onProgress = p => {
-    loadbar.style.width = (p*100).toFixed(0) + '%';
-    if (p >= 1) setTimeout(()=> loadbar.style.opacity = 0, 600);
-  };
-  scenes[0].load();                       // scena 1 subito
-  setTimeout(()=> scenes[1].load(), 1500); // le altre poco dopo
-  setTimeout(()=> scenes[2].load(), 3000);
-
-  // hero: leggero parallax + fade del titolo
-  gsap.to('.hero-inner', {
-    opacity: 0, y: -60, ease: 'none',
-    scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom 35%', scrub: true }
-  });
-
-  // scrub per ogni scena
-  scenes.forEach((scene) => {
-    const caps = [...scene.el.querySelectorAll('.caption')];
-    const state = { p: 0 };
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: scene.el,
-        start: 'top top',
-        end: '+=320%',
-        pin: true,
-        scrub: 0.6,
-        anticipatePin: 1,
-        onEnter: () => scene.load(),
-        onRefresh: () => scene.resize()
-      }
-    });
-    tl.to(state, {
-      p: 1, ease: 'none', duration: 1,
-      onUpdate: () => scene.draw(scene.frameFor(state.p))
-    }, 0);
-    // didascalie: una sequenza di momenti lungo lo scrub
-    const n = caps.length, seg = 0.94 / n;
-    caps.forEach((cap, i) => {
-      const t0 = 0.03 + i * seg;
-      tl.fromTo(cap, {opacity:0, y:40}, {opacity:1, y:0, duration: seg*0.25}, t0);
-      const ultimaFinale = (scene.el.id === 's3' && i === n - 1);
-      if (!ultimaFinale) tl.to(cap, {opacity:0, y:-30, duration: seg*0.2}, t0 + seg*0.75);
-    });
-  });
-
-  // interludi: comparsa morbida dei testi
-  gsap.utils.toArray('.interlude').forEach(sec => {
-    gsap.from(sec.children, {opacity:0, y:36, duration:.9, stagger:.15, ease:'power2.out',
-      scrollTrigger:{trigger: sec, start:'top 80%'}});
-  });
-
-  let rT;
-  addEventListener('resize', () => { clearTimeout(rT); rT = setTimeout(()=>{ scenes.forEach(s=>s.resize()); ScrollTrigger.refresh(); }, 200); });
+render();tickCd();setInterval(tickCd,1000);setInterval(renderStatus,60000);
+initReveal();initScroll();initAnchors();initAdmin();initAuthUI();initStory();initFirebase();
 })();
 </script>
-<noscript><style>.scene canvas{display:none}.scene .poster-img{display:block}.caption{opacity:1}</style></noscript>
 </body>
 </html>
