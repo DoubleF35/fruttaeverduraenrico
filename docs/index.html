@@ -330,8 +330,34 @@ footer .fmeta a{color:var(--green-l)}
     </div>
     <div class="actions">
       <a class="act" href="#banco"><svg class="ic"><use href="#i-basket"/></svg>Il banco di oggi</a>
-      <a class="act" href="#offerte"><svg class="ic"><use href="#i-tag"/></svg>Offerte di oggi</a>
+      <a class="act" href="#offerte"><svg class="ic"><use href="#i-tag"/></svg>Prodotti del giorno</a>
       <a class="act" href="#dove"><svg class="ic"><use href="#i-route"/></svg>Come arrivare</a>
+    </div>
+  </section>
+
+  <!-- IL BANCO DI OGGI -->
+  <section class="sec" id="banco">
+    <div class="sec-top rv">
+      <div>
+        <span class="lbl">Appena arrivati</span>
+        <h2>Il banco di oggi</h2>
+      </div>
+      <span class="note" id="fresh-note">aggiornato stamattina</span>
+    </div>
+    <div class="lst" id="lst-fresh"></div>
+  </section>
+
+  <!-- OFFERTE -->
+  <section class="sec" id="offerte">
+    <div class="offerte rv">
+      <span class="lbl"><svg class="ic"><use href="#i-tag"/></svg>Solo oggi</span>
+      <h2>Prodotti <em>del giorno</em></h2>
+      <p class="lead">Le specialità di oggi, da prendere prima della chiusura. Quantità limitate — chiama per prenotare.</p>
+      <div class="cd" id="cd">
+        <span class="k">Chiude tra</span>
+        <span class="t" id="cd-t">—</span>
+      </div>
+      <div class="off-list" id="off-list"></div>
     </div>
   </section>
 
@@ -360,32 +386,6 @@ footer .fmeta a{color:var(--green-l)}
       <div class="nm"><img src="frames/s3/poster.webp" alt="Il banco di Frutta e Verdura Enrico"><div class="stage-cap"><div class="num">III — Il banco</div><h3>Pochi km dopo, è già fresco</h3></div></div>
     </div>
     <p class="storia-tie">Raccolto ieri, al banco stamattina.</p>
-  </section>
-
-  <!-- IL BANCO DI OGGI -->
-  <section class="sec" id="banco">
-    <div class="sec-top rv">
-      <div>
-        <span class="lbl">Appena arrivati</span>
-        <h2>Il banco di oggi</h2>
-      </div>
-      <span class="note" id="fresh-note">aggiornato stamattina</span>
-    </div>
-    <div class="lst" id="lst-fresh"></div>
-  </section>
-
-  <!-- OFFERTE -->
-  <section class="sec" id="offerte">
-    <div class="offerte rv">
-      <span class="lbl"><svg class="ic"><use href="#i-tag"/></svg>Solo oggi</span>
-      <h2>Da prendere <em>entro chiusura</em></h2>
-      <p class="lead">Quantità limitate — chiama per prenotare. Quando finisce, finisce.</p>
-      <div class="cd" id="cd">
-        <span class="k">Chiude tra</span>
-        <span class="t" id="cd-t">—</span>
-      </div>
-      <div class="off-list" id="off-list"></div>
-    </div>
   </section>
 
   <!-- ENRICO -->
@@ -459,7 +459,7 @@ footer .fmeta a{color:var(--green-l)}
   <div class="adm-mode" id="adm-mode"></div>
   <div class="adm-tabs">
     <button class="adm-tab on" data-pane="banco">Il banco</button>
-    <button class="adm-tab" data-pane="offerte">Offerte</button>
+    <button class="adm-tab" data-pane="offerte">Del giorno</button>
     <button class="adm-tab" data-pane="bottega">Bottega</button>
   </div>
   <div class="adm-body">
@@ -469,9 +469,9 @@ footer .fmeta a{color:var(--green-l)}
       <button class="addbtn" id="add-fresh"><svg class="ic"><use href="#i-plus"/></svg>Aggiungi prodotto</button>
     </div>
     <div class="adm-pane" id="pane-offerte">
-      <div class="hint">Le offerte <b>da prendere entro chiusura</b>: cesti, sottocosto, ultime cassette.</div>
+      <div class="hint">I <b>prodotti del giorno</b>: cesti, specialità e sottocosto da prendere prima della chiusura.</div>
       <div id="ed-off"></div>
-      <button class="addbtn" id="add-off"><svg class="ic"><use href="#i-plus"/></svg>Aggiungi offerta</button>
+      <button class="addbtn" id="add-off"><svg class="ic"><use href="#i-plus"/></svg>Aggiungi prodotto del giorno</button>
     </div>
     <div class="adm-pane" id="pane-bottega">
       <div class="fld"><span class="l">Stato di adesso</span>
@@ -714,7 +714,7 @@ function buildFresh(){$('#ed-fresh').innerHTML=DRAFT.fresh.map((p,i)=>'<div clas
   '<label class="chk"><input type="checkbox" data-f="isNew" '+(p.isNew?'checked':'')+'> Segna come «nuovo»</label>'+
   photoBtn('fresh',i,p.photo)+'</div>').join('');}
 function buildOff(){$('#ed-off').innerHTML=DRAFT.offers.map((o,i)=>'<div class="erow" data-i="'+i+'"><button class="del" data-del="off" data-i="'+i+'">'+icn(IC.trash)+'</button>'+
-  '<span class="l">Offerta</span><input data-f="name" value="'+esc(o.name||'')+'" placeholder="Nome dell\'offerta">'+
+  '<span class="l">Prodotto del giorno</span><input data-f="name" value="'+esc(o.name||'')+'" placeholder="Nome del prodotto">'+
   '<input data-f="desc" value="'+esc(o.desc||'')+'" placeholder="Descrizione">'+
   '<input data-f="price" type="number" step="0.10" inputmode="decimal" value="'+o.price+'" placeholder="Prezzo">'+
   photoBtn('off',i,o.photo)+'</div>').join('');}
